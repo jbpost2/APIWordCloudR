@@ -5457,6 +5457,8 @@ slide:not(.current) .plotly.html-widget{
 <li><p>Create a word cloud</p></li>
 </ul>
 
+<p><a href='https://github.com/jbpost2/APIWordCloudR' title=''>Repo with HTML slides &amp; code</a></p>
+
 </article></slide><slide class=""><hgroup><h2>APIs</h2></hgroup><article  id="apis">
 
 <p>Application Programming Interfaces (APIs) - a defined method for asking for information from a computer</p>
@@ -5536,8 +5538,8 @@ GET(&quot;http://newsapi.org/v2/everything?qlnTitle=Juneteenth&amp;from=2021-06-
 ##  $ all_headers:List of 1
 ##  $ cookies    :&#39;data.frame&#39;: 0 obs. of  7 variables:
 ##  $ content    : raw [1:84391] 7b 22 73 74 ...
-##  $ date       : POSIXct[1:1], format:  ...
-##  $ times      : Named num [1:6] 0 0.00101 0.01314 0.01322 0.1924 ...
+##  $ date       : POSIXct[1:1], format: &quot;2021-06-18 17:56:44&quot;
+##  $ times      : Named num [1:6] 0 0.00391 0.02254 0.02266 0.06164 ...
 ##   ..- attr(*, &quot;names&quot;)= chr [1:6] &quot;redirect&quot; &quot;namelookup&quot; &quot;connect&quot; &quot;pretransfer&quot; ...
 ##  $ request    :List of 7
 ##   ..- attr(*, &quot;class&quot;)= chr &quot;request&quot;
@@ -5569,208 +5571,208 @@ str(parsed, max.level = 1)</pre>
 <pre class = 'prettyprint lang-r'>parsed$articles %&gt;% 
   select(author, source, title, description, everything())</pre>
 
-<pre >##                                            author
-## 1                                    Trish Bendix
-## 2              Amelia Nierenberg and David Poller
-## 3                                  Tariro Mzezewa
-## 4                           Isabella GrullÃ³n Paz
-## 5                                 Luke Broadwater
-## 6                 Annie Karni and Luke Broadwater
-## 7                                   Laura Zornosa
-## 8                                   Alyssa Lukpat
-## 9                https://www.facebook.com/bbcnews
-## 10       Dana Rubinstein and Luis FerrÃ©-SadurnÃ­
-## 11                                   Kenny Herzog
-## 12                                        Reuters
-## 13                                        Reuters
-## 14                                        Reuters
-## 15                                  Reuters Staff
-## 16                                        Reuters
-## 17                                   Makini Brice
-## 18                                  Reuters Staff
-## 19                  W. James Antle III, Columnist
-## 20                               Jason Weisberger
-## 21                                    Katie Olsen
-## 22                               Elizabeth Segran
-## 23                                     Alana Wise
-## 24  oseddiq@insider.com (Oma Seddiq,Eliza Relman)
-## 25                                   Kenny Herzog
-## 26                                   Vanessa Romo
-## 27   gpanetta@businessinsider.com (Grace Panetta)
-## 28                                     Maya Brown
-## 29                                  Reuters Staff
-## 30                                  Kevin Freking
-## 31           Bonnie Kristian, Contributing editor
-## 32                                  Kevin Freking
-## 33                                  Brittany Wong
-## 34                           The Associated Press
-## 35                 KEVIN FREKING Associated Press
-## 36                          Kellie Carter Jackson
-## 37                                   Libby Cathey
-## 38                                Justin McFarlin
-## 39                               Maydha Devarajan
-## 40                                     Devna Bose
-## 41            Brigid Kennedy, Contributing Writer
-## 42                                   Weston Blasi
-## 43                                 Alison Kuznitz
-## 44                                    Joe Marusak
-## 45                                Nneka D. Dennie
-## 46                                      Lee Moran
-## 47                                David Pescovitz
-## 48                               Yahoo News Video
-## 49                     Peter Weber, Senior editor
-## 50                       Paul Blest, chloe angyal
-## 51                    Guardian staff and agencies
-## 52                             USA TODAY, Editors
-## 53         USA TODAY, Javonte Anderson, USA TODAY
-## 54        USA TODAY, Savannah Behrmann, USA TODAY
-## 55                                   Libby Cathey
-## 56                USA TODAY, Jenna Ryu, USA TODAY
-## 57                        Jazzmine | Dash of Jazz
-## 58                             Carron J. Phillips
-## 59                                   Sytonia Reid
-## 60                               Kansas City Star
-## 61                                   Meiko Temple
-## 62                                TOM FOREMAN Jr.
-## 63                              Tasneem Nashrulla
-## 64                                  Madison Bloom
-## 65                                    Janell Ross
-## 66                                           &lt;NA&gt;
-## 67                                      Macy Gray
-## 68                                   Skylar Laird
-## 69                               Marquise Francis
-## 70                                   Will Coleman
-## 71                                       LA Times
-## 72                                     April Ryan
-## 73         Arit John, Julissa James, Kailyn Brown
-## 74                                  Asta Hemenway
-## 75                                   Meiko Temple
-## 76                               Victor Reklaitis
-## 77                                            Ben
-## 78                                   Cameron Koch
-## 79                               Sarah Al-Arshani
-## 80                                      Stephanie
-## 81                                Hannah Wolansky
-## 82                             Nolan D. McCaskill
-## 83                                      The Onion
-## 84                                     Dara Prant
-## 85                                 Claire Shaffer
-## 86                                      TMZ Staff
-## 87      info@hypebeast.com (HYPEBEAST), HYPEBEAST
-## 88                              Meera Jagannathan
-## 89                                     Hasit Shah
-## 90                                  Joe Wituschek
-## 91                                     Al Jazeera
-## 92                                 Fabiola Cineas
-## 93                                    Andrew Mach
-## 94                               Nick Niedzwiadek
-## 95                                             AP
-## 96                                    David Cohen
-## 97                                     Mike Avila
-## 98                                    Clint Smith
-## 99                                       jillg366
-## 100                                           NPR
-##              source.id         source.name
-## 1                 &lt;NA&gt;      New York Times
-## 2                 &lt;NA&gt;      New York Times
-## 3                 &lt;NA&gt;      New York Times
-## 4                 &lt;NA&gt;      New York Times
-## 5                 &lt;NA&gt;      New York Times
-## 6                 &lt;NA&gt;      New York Times
-## 7                 &lt;NA&gt;      New York Times
-## 8                 &lt;NA&gt;      New York Times
-## 9             bbc-news            BBC News
-## 10                &lt;NA&gt;      New York Times
-## 11                &lt;NA&gt;        Entrepreneur
-## 12             reuters             Reuters
-## 13             reuters             Reuters
-## 14             reuters             Reuters
-## 15             reuters             Reuters
-## 16             reuters             Reuters
-## 17             reuters             Reuters
-## 18             reuters             Reuters
-## 19                &lt;NA&gt; Yahoo Entertainment
-## 20                &lt;NA&gt;         Boing Boing
-## 21                &lt;NA&gt;        Cool Hunting
-## 22                &lt;NA&gt;        Fast Company
-## 23                &lt;NA&gt;                 NPR
-## 24    business-insider    Business Insider
-## 25                &lt;NA&gt;        Entrepreneur
-## 26                &lt;NA&gt;                 NPR
-## 27    business-insider    Business Insider
-## 28                &lt;NA&gt; Yahoo Entertainment
-## 29             reuters             Reuters
-## 30                &lt;NA&gt;          Ctvnews.ca
-## 31                &lt;NA&gt; Yahoo Entertainment
-## 32                &lt;NA&gt;         Global News
-## 33                &lt;NA&gt;            HuffPost
-## 34            abc-news            ABC News
-## 35            abc-news            ABC News
-## 36                &lt;NA&gt;        The Atlantic
-## 37            abc-news            ABC News
-## 38                &lt;NA&gt; Yahoo Entertainment
-## 39                &lt;NA&gt; Yahoo Entertainment
-## 40                &lt;NA&gt; Yahoo Entertainment
-## 41                &lt;NA&gt; Yahoo Entertainment
-## 42                &lt;NA&gt;         MarketWatch
-## 43                &lt;NA&gt; Yahoo Entertainment
-## 44                &lt;NA&gt; Yahoo Entertainment
-## 45                &lt;NA&gt;      Slate Magazine
-## 46                &lt;NA&gt;            HuffPost
-## 47                &lt;NA&gt;         Boing Boing
-## 48                &lt;NA&gt; Yahoo Entertainment
-## 49                &lt;NA&gt; Yahoo Entertainment
-## 50           vice-news           Vice News
-## 51                &lt;NA&gt;        The Guardian
-## 52           usa-today           USA Today
-## 53           usa-today           USA Today
-## 54           usa-today           USA Today
-## 55            abc-news            ABC News
-## 56           usa-today           USA Today
-## 57                &lt;NA&gt;          Food52.com
-## 58                &lt;NA&gt;            Deadspin
-## 59                &lt;NA&gt; Yahoo Entertainment
-## 60                &lt;NA&gt; Yahoo Entertainment
-## 61                &lt;NA&gt;       Thekitchn.com
-## 62                &lt;NA&gt; Yahoo Entertainment
-## 63                &lt;NA&gt;       BuzzFeed News
-## 64                &lt;NA&gt;           Pitchfork
-## 65                time                Time
-## 66                &lt;NA&gt;        The Guardian
-## 67                &lt;NA&gt;         MarketWatch
-## 68                &lt;NA&gt; Yahoo Entertainment
-## 69                &lt;NA&gt; Yahoo Entertainment
-## 70                &lt;NA&gt;       Thekitchn.com
-## 71                &lt;NA&gt; Yahoo Entertainment
-## 72                &lt;NA&gt; Yahoo Entertainment
-## 73                &lt;NA&gt; Yahoo Entertainment
-## 74                &lt;NA&gt; Yahoo Entertainment
-## 75                &lt;NA&gt;       Thekitchn.com
-## 76                &lt;NA&gt;         MarketWatch
-## 77                &lt;NA&gt;        Adafruit.com
-## 78                &lt;NA&gt;            GameSpot
-## 79                &lt;NA&gt;             INSIDER
-## 80                &lt;NA&gt;        Adafruit.com
-## 81                &lt;NA&gt;        Theonion.com
-## 82            politico            Politico
-## 83                &lt;NA&gt;        Theonion.com
-## 84                &lt;NA&gt;         Fashionista
-## 85                &lt;NA&gt;       Rolling Stone
-## 86                &lt;NA&gt;                 TMZ
-## 87                &lt;NA&gt;           HYPEBEAST
-## 88                &lt;NA&gt;         MarketWatch
-## 89                &lt;NA&gt;        Quartz India
-## 90                &lt;NA&gt;               iMore
-## 91  al-jazeera-english  Al Jazeera English
-## 92                &lt;NA&gt;                 Vox
-## 93           bloomberg           Bloomberg
-## 94            politico            Politico
-## 95           the-hindu           The Hindu
-## 96                &lt;NA&gt;              Adweek
-## 97                &lt;NA&gt;      The Points Guy
-## 98                &lt;NA&gt;  Theparisreview.org
-## 99                &lt;NA&gt;            Deadline
-## 100               &lt;NA&gt;                 NPR
+<pre >##                                            author          source.id
+## 1                                    Trish Bendix               &lt;NA&gt;
+## 2              Amelia Nierenberg and David Poller               &lt;NA&gt;
+## 3                                  Tariro Mzezewa               &lt;NA&gt;
+## 4                           Isabella GrullÃ³n Paz               &lt;NA&gt;
+## 5                                 Luke Broadwater               &lt;NA&gt;
+## 6                 Annie Karni and Luke Broadwater               &lt;NA&gt;
+## 7                                   Laura Zornosa               &lt;NA&gt;
+## 8                                   Alyssa Lukpat               &lt;NA&gt;
+## 9                https://www.facebook.com/bbcnews           bbc-news
+## 10       Dana Rubinstein and Luis FerrÃ©-SadurnÃ­               &lt;NA&gt;
+## 11                                   Kenny Herzog               &lt;NA&gt;
+## 12                                        Reuters            reuters
+## 13                                        Reuters            reuters
+## 14                                        Reuters            reuters
+## 15                                  Reuters Staff            reuters
+## 16                                        Reuters            reuters
+## 17                                   Makini Brice            reuters
+## 18                                  Reuters Staff            reuters
+## 19                  W. James Antle III, Columnist               &lt;NA&gt;
+## 20                               Jason Weisberger               &lt;NA&gt;
+## 21                                    Katie Olsen               &lt;NA&gt;
+## 22                               Elizabeth Segran               &lt;NA&gt;
+## 23                                     Alana Wise               &lt;NA&gt;
+## 24  oseddiq@insider.com (Oma Seddiq,Eliza Relman)   business-insider
+## 25                                   Kenny Herzog               &lt;NA&gt;
+## 26                                   Vanessa Romo               &lt;NA&gt;
+## 27   gpanetta@businessinsider.com (Grace Panetta)   business-insider
+## 28                                     Maya Brown               &lt;NA&gt;
+## 29                                  Reuters Staff            reuters
+## 30                                  Kevin Freking               &lt;NA&gt;
+## 31           Bonnie Kristian, Contributing editor               &lt;NA&gt;
+## 32                                  Kevin Freking               &lt;NA&gt;
+## 33                                  Brittany Wong               &lt;NA&gt;
+## 34                           The Associated Press           abc-news
+## 35                 KEVIN FREKING Associated Press           abc-news
+## 36                          Kellie Carter Jackson               &lt;NA&gt;
+## 37                                   Libby Cathey           abc-news
+## 38                                Justin McFarlin               &lt;NA&gt;
+## 39                               Maydha Devarajan               &lt;NA&gt;
+## 40                                     Devna Bose               &lt;NA&gt;
+## 41            Brigid Kennedy, Contributing Writer               &lt;NA&gt;
+## 42                                   Weston Blasi               &lt;NA&gt;
+## 43                                 Alison Kuznitz               &lt;NA&gt;
+## 44                                    Joe Marusak               &lt;NA&gt;
+## 45                                Nneka D. Dennie               &lt;NA&gt;
+## 46                                      Lee Moran               &lt;NA&gt;
+## 47                                David Pescovitz               &lt;NA&gt;
+## 48                               Yahoo News Video               &lt;NA&gt;
+## 49                     Peter Weber, Senior editor               &lt;NA&gt;
+## 50                       Paul Blest, chloe angyal          vice-news
+## 51                    Guardian staff and agencies               &lt;NA&gt;
+## 52                             USA TODAY, Editors          usa-today
+## 53         USA TODAY, Javonte Anderson, USA TODAY          usa-today
+## 54        USA TODAY, Savannah Behrmann, USA TODAY          usa-today
+## 55                                   Libby Cathey           abc-news
+## 56                USA TODAY, Jenna Ryu, USA TODAY          usa-today
+## 57                        Jazzmine | Dash of Jazz               &lt;NA&gt;
+## 58                             Carron J. Phillips               &lt;NA&gt;
+## 59                                   Sytonia Reid               &lt;NA&gt;
+## 60                               Kansas City Star               &lt;NA&gt;
+## 61                                   Meiko Temple               &lt;NA&gt;
+## 62                                TOM FOREMAN Jr.               &lt;NA&gt;
+## 63                              Tasneem Nashrulla               &lt;NA&gt;
+## 64                                  Madison Bloom               &lt;NA&gt;
+## 65                                    Janell Ross               time
+## 66                                           &lt;NA&gt;               &lt;NA&gt;
+## 67                                      Macy Gray               &lt;NA&gt;
+## 68                                   Skylar Laird               &lt;NA&gt;
+## 69                               Marquise Francis               &lt;NA&gt;
+## 70                                   Will Coleman               &lt;NA&gt;
+## 71                                       LA Times               &lt;NA&gt;
+## 72                                     April Ryan               &lt;NA&gt;
+## 73         Arit John, Julissa James, Kailyn Brown               &lt;NA&gt;
+## 74                                  Asta Hemenway               &lt;NA&gt;
+## 75                                   Meiko Temple               &lt;NA&gt;
+## 76                               Victor Reklaitis               &lt;NA&gt;
+## 77                                            Ben               &lt;NA&gt;
+## 78                                   Cameron Koch               &lt;NA&gt;
+## 79                               Sarah Al-Arshani               &lt;NA&gt;
+## 80                                      Stephanie               &lt;NA&gt;
+## 81                                Hannah Wolansky               &lt;NA&gt;
+## 82                             Nolan D. McCaskill           politico
+## 83                                      The Onion               &lt;NA&gt;
+## 84                                     Dara Prant               &lt;NA&gt;
+## 85                                 Claire Shaffer               &lt;NA&gt;
+## 86                                      TMZ Staff               &lt;NA&gt;
+## 87      info@hypebeast.com (HYPEBEAST), HYPEBEAST               &lt;NA&gt;
+## 88                              Meera Jagannathan               &lt;NA&gt;
+## 89                                     Hasit Shah               &lt;NA&gt;
+## 90                                  Joe Wituschek               &lt;NA&gt;
+## 91                                     Al Jazeera al-jazeera-english
+## 92                                 Fabiola Cineas               &lt;NA&gt;
+## 93                                    Andrew Mach          bloomberg
+## 94                               Nick Niedzwiadek           politico
+## 95                                             AP          the-hindu
+## 96                                    David Cohen               &lt;NA&gt;
+## 97                                     Mike Avila               &lt;NA&gt;
+## 98                                    Clint Smith               &lt;NA&gt;
+## 99                                       jillg366               &lt;NA&gt;
+## 100                                           NPR               &lt;NA&gt;
+##             source.name
+## 1        New York Times
+## 2        New York Times
+## 3        New York Times
+## 4        New York Times
+## 5        New York Times
+## 6        New York Times
+## 7        New York Times
+## 8        New York Times
+## 9              BBC News
+## 10       New York Times
+## 11         Entrepreneur
+## 12              Reuters
+## 13              Reuters
+## 14              Reuters
+## 15              Reuters
+## 16              Reuters
+## 17              Reuters
+## 18              Reuters
+## 19  Yahoo Entertainment
+## 20          Boing Boing
+## 21         Cool Hunting
+## 22         Fast Company
+## 23                  NPR
+## 24     Business Insider
+## 25         Entrepreneur
+## 26                  NPR
+## 27     Business Insider
+## 28  Yahoo Entertainment
+## 29              Reuters
+## 30           Ctvnews.ca
+## 31  Yahoo Entertainment
+## 32          Global News
+## 33             HuffPost
+## 34             ABC News
+## 35             ABC News
+## 36         The Atlantic
+## 37             ABC News
+## 38  Yahoo Entertainment
+## 39  Yahoo Entertainment
+## 40  Yahoo Entertainment
+## 41  Yahoo Entertainment
+## 42          MarketWatch
+## 43  Yahoo Entertainment
+## 44  Yahoo Entertainment
+## 45       Slate Magazine
+## 46             HuffPost
+## 47          Boing Boing
+## 48  Yahoo Entertainment
+## 49  Yahoo Entertainment
+## 50            Vice News
+## 51         The Guardian
+## 52            USA Today
+## 53            USA Today
+## 54            USA Today
+## 55             ABC News
+## 56            USA Today
+## 57           Food52.com
+## 58             Deadspin
+## 59  Yahoo Entertainment
+## 60  Yahoo Entertainment
+## 61        Thekitchn.com
+## 62  Yahoo Entertainment
+## 63        BuzzFeed News
+## 64            Pitchfork
+## 65                 Time
+## 66         The Guardian
+## 67          MarketWatch
+## 68  Yahoo Entertainment
+## 69  Yahoo Entertainment
+## 70        Thekitchn.com
+## 71  Yahoo Entertainment
+## 72  Yahoo Entertainment
+## 73  Yahoo Entertainment
+## 74  Yahoo Entertainment
+## 75        Thekitchn.com
+## 76          MarketWatch
+## 77         Adafruit.com
+## 78             GameSpot
+## 79              INSIDER
+## 80         Adafruit.com
+## 81         Theonion.com
+## 82             Politico
+## 83         Theonion.com
+## 84          Fashionista
+## 85        Rolling Stone
+## 86                  TMZ
+## 87            HYPEBEAST
+## 88          MarketWatch
+## 89         Quartz India
+## 90                iMore
+## 91   Al Jazeera English
+## 92                  Vox
+## 93            Bloomberg
+## 94             Politico
+## 95            The Hindu
+## 96               Adweek
+## 97       The Points Guy
+## 98   Theparisreview.org
+## 99             Deadline
+## 100                 NPR
 ##                                                                                                                                             title
 ## 1                                                                                  Stephen Colbert Celebrates Americaâ\200\231s New Holiday, Juneteenth
 ## 2                                                                                 Obamacare, Juneteenth, Comedies: Your Thursday Evening Briefing
@@ -5783,8 +5785,8 @@ str(parsed, max.level = 1)</pre>
 ## 9                                                                             Juneteenth: What is the newest US holiday and how is it celebrated?
 ## 10                                                                                     N.Y.C. Workers Will Not Have a Paid Day Off for Juneteenth
 ## 11                                                                                       More Companies Have Designated Juneteenth a Paid Holiday
-## 12                                                                      Factbox: What is Juneteenth and how are people marking the day? - Reuters
-## 13                                                                    JPMorgan, UBS to allow U.S. employees take day off for Juneteenth - Reuters
+## 12                                                                    JPMorgan, UBS to allow U.S. employees take day off for Juneteenth - Reuters
+## 13                                                                      Factbox: What is Juneteenth and how are people marking the day? - Reuters
 ## 14                                                           Biden to sign Juneteenth bill, creating holiday marking U.S. slavery&#39;s end - Reuters
 ## 15                                                     U.S. CDC delays meet on heart risk from COVID-19 shots due to Juneteenth holiday - Reuters
 ## 16                                                   U.S. SEC to close its offices Friday to observe the new Juneteenth federal holiday - Reuters
@@ -5884,8 +5886,8 @@ str(parsed, max.level = 1)</pre>
 ## 9                                                                                                                                                                                     The commemoration of the last enslaved black American being freed is now an official US holiday.
 ## 10                                                                                                               Mayor Bill de Blasio vowed last year that Juneteenth would be an official holiday. City workers learned this week they would not be getting a paid day off after all.
 ## 11                                                              As the Senate passes Juneteenth National Independence Day Act, corporations including Best Buy and National Grid join a growing list of businesses who&#39;ve recognized the occasion in the wake of George Floyd&#39;s death.
-## 12                                                                                                                           U.S. President Joe Biden signed a bill into law on Thursday, making June 19 a federal holiday commemorating the emancipation of enslaved Black Americans.
-## 13                                                                                                  JPMorgan Chase &amp; Co (JPM.N) will give its U.S. employees one floating day off for the newly implemented Juneteenth federal holiday, according to an internal memo seen by Reuters.
+## 12                                                                                                  JPMorgan Chase &amp; Co (JPM.N) will give its U.S. employees one floating day off for the newly implemented Juneteenth federal holiday, according to an internal memo seen by Reuters.
+## 13                                                                                                                           U.S. President Joe Biden signed a bill into law on Thursday, making June 19 a federal holiday commemorating the emancipation of enslaved Black Americans.
 ## 14                                                                                                       U.S. President Joe Biden will sign a bill into law on Thursday afternoon to make June 19 a federal holiday commemorating the end of the legal enslavement of Black Americans.
 ## 15                                                                 The U.S. Centers for Disease Control and Prevention (CDC) on Thursday put off its meeting to discuss the occurrence of myocarditis among people who received COVID-19 shots due to the Juneteenth national holiday.
 ## 16                                                                                               The U.S. Securities and Exchange Commission (SEC) will close its offices on Friday in observance of the newly implemented Juneteenth federal holiday, the agency said in a statement.
@@ -5985,8 +5987,8 @@ str(parsed, max.level = 1)</pre>
 ## 9                                                                                                                                    https://www.bbc.co.uk/news/world-us-canada-57515192
 ## 10                                                                                               https://www.nytimes.com/2021/06/17/nyregion/juneteenth-not-a-holiday-nyc-employees.html
 ## 11                                                                                                                                           https://www.entrepreneur.com/article/374747
-## 12                                                                                            https://www.reuters.com/world/us/what-is-juneteenth-how-are-people-marking-day-2021-06-18/
-## 13                                                                          https://www.reuters.com/business/finance/jpmorgan-ubs-allow-us-employees-take-day-off-juneteenth-2021-06-17/
+## 12                                                                          https://www.reuters.com/business/finance/jpmorgan-ubs-allow-us-employees-take-day-off-juneteenth-2021-06-17/
+## 13                                                                                            https://www.reuters.com/world/us/what-is-juneteenth-how-are-people-marking-day-2021-06-18/
 ## 14                                                                      https://www.reuters.com/world/us/biden-sign-juneteenth-bill-creating-holiday-marking-us-slaverys-end-2021-06-17/
 ## 15                                                                                                                      https://www.reuters.com/article/usa-cdc-juneteenth-idUSL3N2NZ4JX
 ## 16                                                                   https://www.reuters.com/business/us-sec-close-its-offices-friday-observe-new-juneteenth-federal-holiday-2021-06-17/
@@ -6086,8 +6088,8 @@ str(parsed, max.level = 1)</pre>
 ## 9                                                                                                                                                                                                                                        https://ichef.bbci.co.uk/news/1024/branded_news/1148C/production/_118969707_untitled.png
 ## 10                                                                                                                                                                                                                            https://static01.nyt.com/images/2021/06/17/nyregion/17nyjuneteenth/17nyjuneteenth-facebookJumbo.jpg
 ## 11                                                                                                                                                                                                                                         https://assets.entrepreneur.com/content/3x2/2000/1623857245-GettyImages-1320637700.jpg
-## 12                                                                                                                                            https://www.reuters.com/resizer/f5b_CxET2cMlvVEMUVCupa5GD4U=/800x419/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/O5SIXYUUTZKKFN5SOJ7SW5SC4U.jpg
-## 13                                                                                                                                            https://www.reuters.com/resizer/3PC6doH3UXWta_Kq7JE0bCkOxp0=/800x419/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/KYGVOATU4RKLBAUZ5ZZTP244EE.jpg
+## 12                                                                                                                                            https://www.reuters.com/resizer/3PC6doH3UXWta_Kq7JE0bCkOxp0=/800x419/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/KYGVOATU4RKLBAUZ5ZZTP244EE.jpg
+## 13                                                                                                                                            https://www.reuters.com/resizer/f5b_CxET2cMlvVEMUVCupa5GD4U=/800x419/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/O5SIXYUUTZKKFN5SOJ7SW5SC4U.jpg
 ## 14                                                                                                                                            https://www.reuters.com/resizer/9sJClrqOF9uWxsf5afHDwDKsNS0=/800x419/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/SD7MOK2STVJCVL6O53Q6RKJW7Q.jpg
 ## 15                                                                                                                                                                                                                                                         https://s1.reutersmedia.net/resources_v2/images/rcom-default.png?w=800
 ## 16                                                                                                                                            https://www.reuters.com/resizer/MKKqopu8oFTPxYw98LkUcDOGew4=/800x419/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/IOQW7HRU6VPY7PUF65C767WK2Q.jpg
@@ -6187,8 +6189,8 @@ str(parsed, max.level = 1)</pre>
 ## 9   2021-06-17T20:15:15Z
 ## 10  2021-06-17T19:31:32Z
 ## 11  2021-06-16T15:27:51Z
-## 12  2021-06-18T00:16:00Z
-## 13  2021-06-17T22:28:00Z
+## 12  2021-06-17T22:28:00Z
+## 13  2021-06-18T00:16:00Z
 ## 14  2021-06-17T15:27:00Z
 ## 15  2021-06-17T21:58:00Z
 ## 16  2021-06-17T20:37:00Z
@@ -6288,8 +6290,8 @@ str(parsed, max.level = 1)</pre>
 ## 9         media captionJuneteenth is a celebration of the freedom, culture and empowerment of African-Americans.\r\nThe Juneteenth National Independence Day Act, which establishes a holiday that commemorates theâ\200¦ [+4873 chars]
 ## 10          Mr. de Blasio is taking other measures to demonstrate a commitment to honoring Juneteenth. On Thursday, he announced a Friday Juneteenth celebration on the James Baldwin Lawn in Harlems St. Nicholas â\200¦ [+1867 chars]
 ## 11        This Saturday is Juneteenth, the annual holidayÂ long recognized by Black communities nationwide everyÂ June 19. It was on that date in 1865 when a Union general arrived in Galveston, Texas and informeâ\200¦ [+1965 chars]
-## 12          U.S. President Joe Biden speaks prior to signing of the Juneteenth National Independence Day Act into law in the East Room of the White House in Washington, U.S., June 17, 2021. REUTERS/Carlos Barriaâ\200¦ [+3763 chars]
-## 13          A view of the exterior of the JP Morgan Chase &amp;amp; Co. corporate headquarters in New York City May 20, 2015. REUTERS/Mike SegarJune 17 (Reuters) - JPMorgan Chase &amp;amp; Co (JPM.N) will give its U.S. â\200¦ [+1332 chars]
+## 12          A view of the exterior of the JP Morgan Chase &amp;amp; Co. corporate headquarters in New York City May 20, 2015. REUTERS/Mike SegarJune 17 (Reuters) - JPMorgan Chase &amp;amp; Co (JPM.N) will give its U.S. â\200¦ [+1332 chars]
+## 13          U.S. President Joe Biden speaks prior to signing of the Juneteenth National Independence Day Act into law in the East Room of the White House in Washington, U.S., June 17, 2021. REUTERS/Carlos Barriaâ\200¦ [+3763 chars]
 ## 14          WASHINGTON, June 17 (Reuters) - U.S. President Joe Biden will sign a bill into law on Thursday afternoon to make June 19 a federal holiday commemorating the end of the legal enslavement of Black Amerâ\200¦ [+1399 chars]
 ## 15         By Reuters Staff\r\nJune 17 (Reuters) - The U.S. Centers for Disease Control and Prevention (CDC) on Thursday put off its meeting to discuss the occurrence of myocarditis among people who received COVIâ\200¦ [+391 chars]
 ## 16           The seal of the U.S. Securities and Exchange Commission (SEC) is seen at their headquarters in Washington, D.C., U.S., May 12, 2021. REUTERS/Andrew KellyWASHINGTON, June 17 (Reuters) - The U.S. Securâ\200¦ [+598 chars]
@@ -6436,8 +6438,8 @@ wcData</pre>
 
 <pre class = 'prettyprint lang-r'>library(wordcloud2); wordcloud2(wcData[-1,])</pre>
 
-<div id="htmlwidget-5d104bae870b7edaa37e" style="width:720px;height:432px;" class="wordcloud2 html-widget"></div>
-<script type="application/json" data-for="htmlwidget-5d104bae870b7edaa37e">{"x":{"word":["holiday","federal","bill","biden","u.s","â","black","day","slavery","event","reuters","signs","congress","marking","national","americans","city","freedom","passes","plantation","senate","14","approves","celebrate","celebrating","celebration","create","emancipation","employees","free","friday","honor","house","law","paid","voted","votes","white","19","2021","94","announces","canceled","celebrates","close","colbert","companies","creatives","donâ","due","events","finally","food","fundraiser","global","hereâ","jpmorgan","juneteenthâ","kansas","makes","mayor","meet","meiko","nc","news","observe","offices","promo","racist","republicans","sec","sign","significance","signing","stephen","temple's","thursday","time","ubs","1","158","4","44","5","7","800","abolition","adafruit","adding","advertisement","african","alongside","amc","americaâ","american","angelenos","angeles","annual","anti","apology","apple","attends","backlash","bandcamp","bbq","belongs","bloggers","book","bowl","box","briefing","businesses","calls","campaigned","cancels","capitol","carolina","cary","cdc","celebrated","celebrations","ceo","chainâ","cheer","chic","chicago","chicken","china","claimed","closed","coleman's","comedies","commemorating","conceals","confusionâ","congressmen","continue","contract","controversial","cookout","corporate","covid","creating","critics","crowned","ctv","darius","decades","defeating","delays","depicting","designated","details","dolce","downes","drinks","effect","empty","encourages","enemy","entertainment","equity","erase","establishing","evening","excuses","explainer","facebook","factbox","fallon","famous","fargo","fashion","feels","fight","films","flag","forget","freeâ","fugitive","gabbana","gallery","galveston","gap","gesture","giving","groundwork","hard","heart","helped","hijacked","historic","history","holidayâ","hypocrisy","iâ","ibram","infrastructure","inspired","isnâ","itâ","items","jeer","jimmy","july","june","kendi","knockout","lara","late","latta","laying","led","lee","leeâ","legacy","legislation","limeade","list","los","marker","meck","miami","miss","multiply","n.y.c","nationâ","nft","nile","nonprofit","north","nypl","obamacare","offâ","official","opal","opinion","opposition","overdue","owned","owner","pay","people","perform","perspective","pianist","plans","playlist","poised","poll","president","profound","progress","public","push","racism","read","recipes","reckoning","recognition","red","refugeeâ","refugees","remain","removes","report","republicansâ","response","reuters.com","risk","robert","rodgers","rpt","rucker","sc","sets","shirt","shop","shots","showcase","showstopper","slams","slave","slaveowner","slavery's","songs","southern","spotlight","stories","story","style","talk","tees","thankful","times","told","town","tradition","treat","trifle","trump","unanimously","unimpressed","unityfest","update","users","usher","video","vine","virtual","vote","wasnâ","watchlist","watermelon","weâ","wednesday","week","weekend","weekly","weight","wings","woman","workers","worst","york"],"freq":[47,28,14,12,10,9,8,8,8,7,7,7,6,5,5,4,4,4,4,4,4,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"fontFamily":"Segoe UI","fontWeight":"bold","color":"random-dark","minSize":0,"weightFactor":3.82978723404255,"backgroundColor":"white","gridSize":0,"minRotation":-0.785398163397448,"maxRotation":0.785398163397448,"shuffle":true,"rotateRatio":0.4,"shape":"circle","ellipticity":0.65,"figBase64":null,"hover":null},"evals":[],"jsHooks":{"render":[{"code":"function(el,x){\n                        console.log(123);\n                        if(!iii){\n                          window.location.reload();\n                          iii = False;\n\n                        }\n  }","data":null}]}}</script>
+<div id="htmlwidget-2cf09b299f1f6cbee6ab" style="width:720px;height:432px;" class="wordcloud2 html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2cf09b299f1f6cbee6ab">{"x":{"word":["holiday","federal","bill","biden","u.s","â","black","day","slavery","event","reuters","signs","congress","marking","national","americans","city","freedom","passes","plantation","senate","14","approves","celebrate","celebrating","celebration","create","emancipation","employees","free","friday","honor","house","law","paid","voted","votes","white","19","2021","94","announces","canceled","celebrates","close","colbert","companies","creatives","donâ","due","events","finally","food","fundraiser","global","hereâ","jpmorgan","juneteenthâ","kansas","makes","mayor","meet","meiko","nc","news","observe","offices","promo","racist","republicans","sec","sign","significance","signing","stephen","temple's","thursday","time","ubs","1","158","4","44","5","7","800","abolition","adafruit","adding","advertisement","african","alongside","amc","americaâ","american","angelenos","angeles","annual","anti","apology","apple","attends","backlash","bandcamp","bbq","belongs","bloggers","book","bowl","box","briefing","businesses","calls","campaigned","cancels","capitol","carolina","cary","cdc","celebrated","celebrations","ceo","chainâ","cheer","chic","chicago","chicken","china","claimed","closed","coleman's","comedies","commemorating","conceals","confusionâ","congressmen","continue","contract","controversial","cookout","corporate","covid","creating","critics","crowned","ctv","darius","decades","defeating","delays","depicting","designated","details","dolce","downes","drinks","effect","empty","encourages","enemy","entertainment","equity","erase","establishing","evening","excuses","explainer","facebook","factbox","fallon","famous","fargo","fashion","feels","fight","films","flag","forget","freeâ","fugitive","gabbana","gallery","galveston","gap","gesture","giving","groundwork","hard","heart","helped","hijacked","historic","history","holidayâ","hypocrisy","iâ","ibram","infrastructure","inspired","isnâ","itâ","items","jeer","jimmy","july","june","kendi","knockout","lara","late","latta","laying","led","lee","leeâ","legacy","legislation","limeade","list","los","marker","meck","miami","miss","multiply","n.y.c","nationâ","nft","nile","nonprofit","north","nypl","obamacare","offâ","official","opal","opinion","opposition","overdue","owned","owner","pay","people","perform","perspective","pianist","plans","playlist","poised","poll","president","profound","progress","public","push","racism","read","recipes","reckoning","recognition","red","refugeeâ","refugees","remain","removes","report","republicansâ","response","reuters.com","risk","robert","rodgers","rpt","rucker","sc","sets","shirt","shop","shots","showcase","showstopper","slams","slave","slaveowner","slavery's","songs","southern","spotlight","stories","story","style","talk","tees","thankful","times","told","town","tradition","treat","trifle","trump","unanimously","unimpressed","unityfest","update","users","usher","video","vine","virtual","vote","wasnâ","watchlist","watermelon","weâ","wednesday","week","weekend","weekly","weight","wings","woman","workers","worst","york"],"freq":[47,28,14,12,10,9,8,8,8,7,7,7,6,5,5,4,4,4,4,4,4,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"fontFamily":"Segoe UI","fontWeight":"bold","color":"random-dark","minSize":0,"weightFactor":3.82978723404255,"backgroundColor":"white","gridSize":0,"minRotation":-0.785398163397448,"maxRotation":0.785398163397448,"shuffle":true,"rotateRatio":0.4,"shape":"circle","ellipticity":0.65,"figBase64":null,"hover":null},"evals":[],"jsHooks":{"render":[{"code":"function(el,x){\n                        console.log(123);\n                        if(!iii){\n                          window.location.reload();\n                          iii = False;\n\n                        }\n  }","data":null}]}}</script>
 
 </center>
 
@@ -6461,7 +6463,9 @@ wcData</pre>
 <ul>
 <li><code>wordcloud2</code> package</li>
 </ul></li>
-</ul></article></slide>
+</ul>
+
+<p><a href='https://github.com/jbpost2/APIWordCloudR' title=''>Repo with HTML slides &amp; code</a> - Download the APIWordCloud.html file and open in a web browser</p></article></slide>
 
 
   <slide class="backdrop"></slide>

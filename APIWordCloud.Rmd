@@ -24,6 +24,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 - Create a word cloud
 
+[Repo with HTML slides & code](https://github.com/jbpost2/APIWordCloudR)
+
 ## APIs
 
 Application Programming Interfaces (APIs) - a defined method for asking for information from a computer  
@@ -178,4 +180,5 @@ library(wordcloud2); wordcloud2(wcData[-1,])
 
     + `wordcloud2` package
 
+[Repo with HTML slides & code](https://github.com/jbpost2/APIWordCloudR) - Download the APIWordCloud.html file and open in a web browser  
 
