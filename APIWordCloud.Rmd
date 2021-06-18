@@ -5,12 +5,13 @@ output:
   ioslides_presentation:
     css: css/style.css
     widescreen: true
+always_allow_html: true
 transition: faster
 logo: logo.png
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, cache = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ## Goals

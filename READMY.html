@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+@font-face {
+font-family: octicons-link;
+src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+body {
+-webkit-text-size-adjust: 100%;
+text-size-adjust: 100%;
+color: #333;
+font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+font-size: 16px;
+line-height: 1.6;
+word-wrap: break-word;
+}
+a {
+background-color: transparent;
+}
+a:active,
+a:hover {
+outline: 0;
+}
+strong {
+font-weight: bold;
+}
+h1 {
+font-size: 2em;
+margin: 0.67em 0;
+}
+img {
+border: 0;
+}
+hr {
+box-sizing: content-box;
+height: 0;
+}
+pre {
+overflow: auto;
+}
+code,
+kbd,
+pre {
+font-family: monospace, monospace;
+font-size: 1em;
+}
+input {
+color: inherit;
+font: inherit;
+margin: 0;
+}
+html input[disabled] {
+cursor: default;
+}
+input {
+line-height: normal;
+}
+input[type="checkbox"] {
+box-sizing: border-box;
+padding: 0;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+td,
+th {
+padding: 0;
+}
+* {
+box-sizing: border-box;
+}
+input {
+font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+a {
+color: #4078c0;
+text-decoration: none;
+}
+a:hover,
+a:active {
+text-decoration: underline;
+}
+hr {
+height: 0;
+margin: 15px 0;
+overflow: hidden;
+background: transparent;
+border: 0;
+border-bottom: 1px solid #ddd;
+}
+hr:before {
+display: table;
+content: "";
+}
+hr:after {
+display: table;
+clear: both;
+content: "";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin-top: 15px;
+margin-bottom: 15px;
+line-height: 1.1;
+}
+h1 {
+font-size: 30px;
+}
+h2 {
+font-size: 21px;
+}
+h3 {
+font-size: 16px;
+}
+h4 {
+font-size: 14px;
+}
+h5 {
+font-size: 12px;
+}
+h6 {
+font-size: 11px;
+}
+blockquote {
+margin: 0;
+}
+ul,
+ol {
+padding: 0;
+margin-top: 0;
+margin-bottom: 0;
+}
+ol ol,
+ul ol {
+list-style-type: lower-roman;
+}
+ul ul ol,
+ul ol ol,
+ol ul ol,
+ol ol ol {
+list-style-type: lower-alpha;
+}
+dd {
+margin-left: 0;
+}
+code {
+font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+font-size: 12px;
+}
+pre {
+margin-top: 0;
+margin-bottom: 0;
+font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+.select::-ms-expand {
+opacity: 0;
+}
+.octicon {
+font: normal normal normal 16px/1 octicons-link;
+display: inline-block;
+text-decoration: none;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+.octicon-link:before {
+content: '\f05c';
+}
+.markdown-body:before {
+display: table;
+content: "";
+}
+.markdown-body:after {
+display: table;
+clear: both;
+content: "";
+}
+.markdown-body>*:first-child {
+margin-top: 0 !important;
+}
+.markdown-body>*:last-child {
+margin-bottom: 0 !important;
+}
+a:not([href]) {
+color: inherit;
+text-decoration: none;
+}
+.anchor {
+display: inline-block;
+padding-right: 2px;
+margin-left: -18px;
+}
+.anchor:focus {
+outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin-top: 1em;
+margin-bottom: 16px;
+font-weight: bold;
+line-height: 1.4;
+}
+h1 .octicon-link,
+h2 .octicon-link,
+h3 .octicon-link,
+h4 .octicon-link,
+h5 .octicon-link,
+h6 .octicon-link {
+color: #000;
+vertical-align: middle;
+visibility: hidden;
+}
+h1:hover .anchor,
+h2:hover .anchor,
+h3:hover .anchor,
+h4:hover .anchor,
+h5:hover .anchor,
+h6:hover .anchor {
+text-decoration: none;
+}
+h1:hover .anchor .octicon-link,
+h2:hover .anchor .octicon-link,
+h3:hover .anchor .octicon-link,
+h4:hover .anchor .octicon-link,
+h5:hover .anchor .octicon-link,
+h6:hover .anchor .octicon-link {
+visibility: visible;
+}
+h1 {
+padding-bottom: 0.3em;
+font-size: 2.25em;
+line-height: 1.2;
+border-bottom: 1px solid #eee;
+}
+h1 .anchor {
+line-height: 1;
+}
+h2 {
+padding-bottom: 0.3em;
+font-size: 1.75em;
+line-height: 1.225;
+border-bottom: 1px solid #eee;
+}
+h2 .anchor {
+line-height: 1;
+}
+h3 {
+font-size: 1.5em;
+line-height: 1.43;
+}
+h3 .anchor {
+line-height: 1.2;
+}
+h4 {
+font-size: 1.25em;
+}
+h4 .anchor {
+line-height: 1.2;
+}
+h5 {
+font-size: 1em;
+}
+h5 .anchor {
+line-height: 1.1;
+}
+h6 {
+font-size: 1em;
+color: #777;
+}
+h6 .anchor {
+line-height: 1.1;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table,
+pre {
+margin-top: 0;
+margin-bottom: 16px;
+}
+hr {
+height: 4px;
+padding: 0;
+margin: 16px 0;
+background-color: #e7e7e7;
+border: 0 none;
+}
+ul,
+ol {
+padding-left: 2em;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+margin-top: 0;
+margin-bottom: 0;
+}
+li>p {
+margin-top: 16px;
+}
+dl {
+padding: 0;
+}
+dl dt {
+padding: 0;
+margin-top: 16px;
+font-size: 1em;
+font-style: italic;
+font-weight: bold;
+}
+dl dd {
+padding: 0 16px;
+margin-bottom: 16px;
+}
+blockquote {
+padding: 0 15px;
+color: #777;
+border-left: 4px solid #ddd;
+}
+blockquote>:first-child {
+margin-top: 0;
+}
+blockquote>:last-child {
+margin-bottom: 0;
+}
+table {
+display: block;
+width: 100%;
+overflow: auto;
+word-break: normal;
+word-break: keep-all;
+}
+table th {
+font-weight: bold;
+}
+table th,
+table td {
+padding: 6px 13px;
+border: 1px solid #ddd;
+}
+table tr {
+background-color: #fff;
+border-top: 1px solid #ccc;
+}
+table tr:nth-child(2n) {
+background-color: #f8f8f8;
+}
+img {
+max-width: 100%;
+box-sizing: content-box;
+background-color: #fff;
+}
+code {
+padding: 0;
+padding-top: 0.2em;
+padding-bottom: 0.2em;
+margin: 0;
+font-size: 85%;
+background-color: rgba(0,0,0,0.04);
+border-radius: 3px;
+}
+code:before,
+code:after {
+letter-spacing: -0.2em;
+content: "\00a0";
+}
+pre>code {
+padding: 0;
+margin: 0;
+font-size: 100%;
+word-break: normal;
+white-space: pre;
+background: transparent;
+border: 0;
+}
+.highlight {
+margin-bottom: 16px;
+}
+.highlight pre,
+pre {
+padding: 16px;
+overflow: auto;
+font-size: 85%;
+line-height: 1.45;
+background-color: #f7f7f7;
+border-radius: 3px;
+}
+.highlight pre {
+margin-bottom: 0;
+word-break: normal;
+}
+pre {
+word-wrap: normal;
+}
+pre code {
+display: inline;
+max-width: initial;
+padding: 0;
+margin: 0;
+overflow: initial;
+line-height: inherit;
+word-wrap: normal;
+background-color: transparent;
+border: 0;
+}
+pre code:before,
+pre code:after {
+content: normal;
+}
+kbd {
+display: inline-block;
+padding: 3px 5px;
+font-size: 11px;
+line-height: 10px;
+color: #555;
+vertical-align: middle;
+background-color: #fcfcfc;
+border: solid 1px #ccc;
+border-bottom-color: #bbb;
+border-radius: 3px;
+box-shadow: inset 0 -1px 0 #bbb;
+}
+.pl-c {
+color: #969896;
+}
+.pl-c1,
+.pl-s .pl-v {
+color: #0086b3;
+}
+.pl-e,
+.pl-en {
+color: #795da3;
+}
+.pl-s .pl-s1,
+.pl-smi {
+color: #333;
+}
+.pl-ent {
+color: #63a35c;
+}
+.pl-k {
+color: #a71d5d;
+}
+.pl-pds,
+.pl-s,
+.pl-s .pl-pse .pl-s1,
+.pl-sr,
+.pl-sr .pl-cce,
+.pl-sr .pl-sra,
+.pl-sr .pl-sre {
+color: #183691;
+}
+.pl-v {
+color: #ed6a43;
+}
+.pl-id {
+color: #b52a1d;
+}
+.pl-ii {
+background-color: #b52a1d;
+color: #f8f8f8;
+}
+.pl-sr .pl-cce {
+color: #63a35c;
+font-weight: bold;
+}
+.pl-ml {
+color: #693a17;
+}
+.pl-mh,
+.pl-mh .pl-en,
+.pl-ms {
+color: #1d3e81;
+font-weight: bold;
+}
+.pl-mq {
+color: #008080;
+}
+.pl-mi {
+color: #333;
+font-style: italic;
+}
+.pl-mb {
+color: #333;
+font-weight: bold;
+}
+.pl-md {
+background-color: #ffecec;
+color: #bd2c00;
+}
+.pl-mi1 {
+background-color: #eaffea;
+color: #55a532;
+}
+.pl-mdr {
+color: #795da3;
+font-weight: bold;
+}
+.pl-mo {
+color: #1d3e81;
+}
+kbd {
+display: inline-block;
+padding: 3px 5px;
+font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+line-height: 10px;
+color: #555;
+vertical-align: middle;
+background-color: #fcfcfc;
+border: solid 1px #ccc;
+border-bottom-color: #bbb;
+border-radius: 3px;
+box-shadow: inset 0 -1px 0 #bbb;
+}
+.task-list-item {
+list-style-type: none;
+}
+.task-list-item+.task-list-item {
+margin-top: 3px;
+}
+.task-list-item input {
+margin: 0 0.35em 0.25em -1.6em;
+vertical-align: middle;
+}
+:checked+.radio-label {
+z-index: 1;
+position: relative;
+border-color: #4078c0;
+}
+.sourceLine {
+display: inline-block;
+}
+code .kw { color: #000000; }
+code .dt { color: #ed6a43; }
+code .dv { color: #009999; }
+code .bn { color: #009999; }
+code .fl { color: #009999; }
+code .ch { color: #009999; }
+code .st { color: #183691; }
+code .co { color: #969896; }
+code .ot { color: #0086b3; }
+code .al { color: #a61717; }
+code .fu { color: #63a35c; }
+code .er { color: #a61717; background-color: #e3d2d2; }
+code .wa { color: #000000; }
+code .cn { color: #008080; }
+code .sc { color: #008080; }
+code .vs { color: #183691; }
+code .ss { color: #183691; }
+code .im { color: #000000; }
+code .va {color: #008080; }
+code .cf { color: #000000; }
+code .op { color: #000000; }
+code .bu { color: #000000; }
+code .ex { color: #000000; }
+code .pp { color: #999999; }
+code .at { color: #008080; }
+code .do { color: #969896; }
+code .an { color: #008080; }
+code .cv { color: #008080; }
+code .in { color: #008080; }
+</style>
+<style>
+body {
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 45px;
+  padding-top: 0px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1 id="connecting-to-an-api-and-making-a-word-cloud">Connecting to an API and Making a Word Cloud</h1>
+<p>Justin Post</p>
+<h2 id="goals">Goals</h2>
+<ul>
+<li><p>Understand very basics of APIs</p></li>
+<li><p>Contact an API using R</p></li>
+<li><p>Process returned data</p></li>
+<li><p>Create a word cloud</p></li>
+</ul>
+<h2 id="apis">APIs</h2>
+<p>Application Programming Interfaces (APIs) - a defined method for asking for information from a computer</p>
+<ul>
+<li><p><a href="https://www.programmableweb.com/apis/directory">List of APIs</a></p></li>
+<li><p>Important for grabbing data, often returned in JSON format</p></li>
+<li><p>Expand opportunities by allowing your students to get data they are interested in!</p></li>
+</ul>
+<blockquote>
+<ul>
+<li>Very few packages for contacting APIs are out there for R (as compared to say python)</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>Can do it yourself using <code>httr</code> package!</li>
+</ul>
+</blockquote>
+<h2 id="steps-to-obtain-data">Steps to obtain data</h2>
+<ul>
+<li><p>Install packages needed for contacting APIs and handling data</p>
+<ul>
+<li><code>httr</code> and <code>jsonlite</code></li>
+</ul></li>
+<li><p>(Usually) Obtain a key by registering at the API you want to contact</p></li>
+<li><p>Construct a <strong>URL</strong> to obtain data (using <code>GET()</code>)</p></li>
+<li><p>Process data using <code>jsonlite</code> functions</p></li>
+</ul>
+<h2 id="example-httpsnewsapiorg">Example <a href="https://newsapi.org/">https://newsapi.org/</a></h2>
+<p>Registered for a key at <a href="https://newsapi.org/">newsapi.org</a>. An API for looking at news articles</p>
+<ul>
+<li><p>Look at documentation for API (most have this!)</p></li>
+<li><p>Example URL to obtain data is given</p></li>
+</ul>
+<p><code>https://newsapi.org/v2/everything?q=bitcoin&amp;apiKey=myKeyGoesHere</code></p>
+<h2 id="example-httpsnewsapiorg-1">Example <a href="https://newsapi.org/">https://newsapi.org/</a></h2>
+<ul>
+<li>Can add in date for instance:</li>
+</ul>
+<img src="data:image/png;base64,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" width="75%" style="display: block; margin: auto;" />
+
+<p><code>https://newsapi.org/v2/everything?q=bitcoin&amp;from=2021-06-01&amp;apiKey=myKeyGoesHere</code></p>
+<h2 id="using-r-to-obtain-the-data">Using R to Obtain the Data</h2>
+<ul>
+<li><p>Use <code>GET</code> from <code>httr</code> package (make sure to load package!)</p></li>
+<li><p>Modify for what you have interest in!</p></li>
+</ul>
+<!-- end list -->
+
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">library</span>(httr)</a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="kw">GET</span>(<span class="st">&quot;http://newsapi.org/v2/everything?qlnTitle=Juneteenth&amp;from=2021-06-01&amp;language=en&amp;</span></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="st">    apiKey=myKeyGoesHere&quot;</span>)</a></code></pre></div>
+<h2 id="returned-data">Returned data</h2>
+<ul>
+<li>Usually what you want is stored in something like <code>content</code></li>
+</ul>
+<!-- end list -->
+
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">str</span>(myData, <span class="dt">max.level =</span> <span class="dv">1</span>)</a></code></pre></div>
+<pre><code>## List of 10
+##  $ url        : chr &quot;http://newsapi.org/v2/everything?qInTitle=Juneteenth&amp;from=2021-06-01&amp;language=en&amp;pageSize=100&amp;apiKey=aa4b545bfb&quot;| __truncated__
+##  $ status_code: int 200
+##  $ headers    :List of 15
+##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;insensitive&quot; &quot;list&quot;
+##  $ all_headers:List of 1
+##  $ cookies    :&#39;data.frame&#39;: 0 obs. of  7 variables:
+##  $ content    : raw [1:84391] 7b 22 73 74 ...
+##  $ date       : POSIXct[1:1], format:  ...
+##  $ times      : Named num [1:6] 0 0.0206 0.0419 0.042 0.1967 ...
+##   ..- attr(*, &quot;names&quot;)= chr [1:6] &quot;redirect&quot; &quot;namelookup&quot; &quot;connect&quot; &quot;pretransfer&quot; ...
+##  $ request    :List of 7
+##   ..- attr(*, &quot;class&quot;)= chr &quot;request&quot;
+##  $ handle     :Class &#39;curl_handle&#39; &lt;externalptr&gt; 
+##  - attr(*, &quot;class&quot;)= chr &quot;response&quot;
+</code></pre>
+<h2 id="parse-with-jsonlite">Parse with <code>jsonlite</code></h2>
+<p>Common steps:</p>
+<ul>
+<li>Grab the list element we want</li>
+<li>Convert it to characters (it will have a JSON structure)</li>
+<li>Convert it to a data frame with <code>fromJSON</code> from the <code>jsonlite</code> package</li>
+</ul>
+<!-- end list -->
+
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">library</span>(dplyr)</a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="kw">library</span>(jsonlite)</a>
+<a class="sourceLine" id="cb4-3" title="3">parsed &lt;-<span class="st"> </span>myData<span class="op">$</span>content <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">rawToChar</span>() <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">fromJSON</span>()</a>
+<a class="sourceLine" id="cb4-4" title="4"><span class="kw">str</span>(parsed, <span class="dt">max.level =</span> <span class="dv">1</span>)</a></code></pre></div>
+<pre><code>## List of 3
+##  $ status      : chr &quot;ok&quot;
+##  $ totalResults: int 1079
+##  $ articles    :&#39;data.frame&#39;:    100 obs. of  8 variables:
+</code></pre>
+<h2 id="inspecting-article-info">Inspecting article info</h2>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" title="1">parsed<span class="op">$</span>articles <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb6-2" title="2"><span class="st">  </span><span class="kw">select</span>(author, source, title, description, <span class="kw">everything</span>())</a></code></pre></div>
+<pre><code>##                                            author
+## 1                                    Trish Bendix
+## 2              Amelia Nierenberg and David Poller
+## 3                                  Tariro Mzezewa
+## 4                           Isabella GrullÃ³n Paz
+## 5                                 Luke Broadwater
+## 6                 Annie Karni and Luke Broadwater
+## 7                                   Laura Zornosa
+## 8                                   Alyssa Lukpat
+## 9                https://www.facebook.com/bbcnews
+## 10       Dana Rubinstein and Luis FerrÃ©-SadurnÃ­
+## 11                                   Kenny Herzog
+## 12                                        Reuters
+## 13                                        Reuters
+## 14                                        Reuters
+## 15                                  Reuters Staff
+## 16                                        Reuters
+## 17                                   Makini Brice
+## 18                                  Reuters Staff
+## 19                  W. James Antle III, Columnist
+## 20                               Jason Weisberger
+## 21                                    Katie Olsen
+## 22                               Elizabeth Segran
+## 23                                     Alana Wise
+## 24  oseddiq@insider.com (Oma Seddiq,Eliza Relman)
+## 25                                   Kenny Herzog
+## 26                                   Vanessa Romo
+## 27   gpanetta@businessinsider.com (Grace Panetta)
+## 28                                     Maya Brown
+## 29                                  Reuters Staff
+## 30                                  Kevin Freking
+## 31           Bonnie Kristian, Contributing editor
+## 32                                  Kevin Freking
+## 33                                  Brittany Wong
+## 34                           The Associated Press
+## 35                 KEVIN FREKING Associated Press
+## 36                          Kellie Carter Jackson
+## 37                                   Libby Cathey
+## 38                                Justin McFarlin
+## 39                               Maydha Devarajan
+## 40                                     Devna Bose
+## 41            Brigid Kennedy, Contributing Writer
+## 42                                   Weston Blasi
+## 43                                 Alison Kuznitz
+## 44                                    Joe Marusak
+## 45                                Nneka D. Dennie
+## 46                                      Lee Moran
+## 47                                David Pescovitz
+## 48                               Yahoo News Video
+## 49                     Peter Weber, Senior editor
+## 50                       Paul Blest, chloe angyal
+## 51                    Guardian staff and agencies
+## 52                             USA TODAY, Editors
+## 53         USA TODAY, Javonte Anderson, USA TODAY
+## 54        USA TODAY, Savannah Behrmann, USA TODAY
+## 55                                   Libby Cathey
+## 56                USA TODAY, Jenna Ryu, USA TODAY
+## 57                        Jazzmine | Dash of Jazz
+## 58                             Carron J. Phillips
+## 59                                   Sytonia Reid
+## 60                               Kansas City Star
+## 61                                   Meiko Temple
+## 62                                TOM FOREMAN Jr.
+## 63                              Tasneem Nashrulla
+## 64                                  Madison Bloom
+## 65                                    Janell Ross
+## 66                                           &lt;NA&gt;
+## 67                                      Macy Gray
+## 68                                   Skylar Laird
+## 69                               Marquise Francis
+## 70                                   Will Coleman
+## 71                                       LA Times
+## 72                                     April Ryan
+## 73         Arit John, Julissa James, Kailyn Brown
+## 74                                  Asta Hemenway
+## 75                                   Meiko Temple
+## 76                               Victor Reklaitis
+## 77                                            Ben
+## 78                                   Cameron Koch
+## 79                               Sarah Al-Arshani
+## 80                                      Stephanie
+## 81                                Hannah Wolansky
+## 82                             Nolan D. McCaskill
+## 83                                      The Onion
+## 84                                     Dara Prant
+## 85                                 Claire Shaffer
+## 86                                      TMZ Staff
+## 87      info@hypebeast.com (HYPEBEAST), HYPEBEAST
+## 88                              Meera Jagannathan
+## 89                                     Hasit Shah
+## 90                                  Joe Wituschek
+## 91                                     Al Jazeera
+## 92                                 Fabiola Cineas
+## 93                                    Andrew Mach
+## 94                               Nick Niedzwiadek
+## 95                                             AP
+## 96                                    David Cohen
+## 97                                     Mike Avila
+## 98                                    Clint Smith
+## 99                                       jillg366
+## 100                                           NPR
+##              source.id         source.name
+## 1                 &lt;NA&gt;      New York Times
+## 2                 &lt;NA&gt;      New York Times
+## 3                 &lt;NA&gt;      New York Times
+## 4                 &lt;NA&gt;      New York Times
+## 5                 &lt;NA&gt;      New York Times
+## 6                 &lt;NA&gt;      New York Times
+## 7                 &lt;NA&gt;      New York Times
+## 8                 &lt;NA&gt;      New York Times
+## 9             bbc-news            BBC News
+## 10                &lt;NA&gt;      New York Times
+## 11                &lt;NA&gt;        Entrepreneur
+## 12             reuters             Reuters
+## 13             reuters             Reuters
+## 14             reuters             Reuters
+## 15             reuters             Reuters
+## 16             reuters             Reuters
+## 17             reuters             Reuters
+## 18             reuters             Reuters
+## 19                &lt;NA&gt; Yahoo Entertainment
+## 20                &lt;NA&gt;         Boing Boing
+## 21                &lt;NA&gt;        Cool Hunting
+## 22                &lt;NA&gt;        Fast Company
+## 23                &lt;NA&gt;                 NPR
+## 24    business-insider    Business Insider
+## 25                &lt;NA&gt;        Entrepreneur
+## 26                &lt;NA&gt;                 NPR
+## 27    business-insider    Business Insider
+## 28                &lt;NA&gt; Yahoo Entertainment
+## 29             reuters             Reuters
+## 30                &lt;NA&gt;          Ctvnews.ca
+## 31                &lt;NA&gt; Yahoo Entertainment
+## 32                &lt;NA&gt;         Global News
+## 33                &lt;NA&gt;            HuffPost
+## 34            abc-news            ABC News
+## 35            abc-news            ABC News
+## 36                &lt;NA&gt;        The Atlantic
+## 37            abc-news            ABC News
+## 38                &lt;NA&gt; Yahoo Entertainment
+## 39                &lt;NA&gt; Yahoo Entertainment
+## 40                &lt;NA&gt; Yahoo Entertainment
+## 41                &lt;NA&gt; Yahoo Entertainment
+## 42                &lt;NA&gt;         MarketWatch
+## 43                &lt;NA&gt; Yahoo Entertainment
+## 44                &lt;NA&gt; Yahoo Entertainment
+## 45                &lt;NA&gt;      Slate Magazine
+## 46                &lt;NA&gt;            HuffPost
+## 47                &lt;NA&gt;         Boing Boing
+## 48                &lt;NA&gt; Yahoo Entertainment
+## 49                &lt;NA&gt; Yahoo Entertainment
+## 50           vice-news           Vice News
+## 51                &lt;NA&gt;        The Guardian
+## 52           usa-today           USA Today
+## 53           usa-today           USA Today
+## 54           usa-today           USA Today
+## 55            abc-news            ABC News
+## 56           usa-today           USA Today
+## 57                &lt;NA&gt;          Food52.com
+## 58                &lt;NA&gt;            Deadspin
+## 59                &lt;NA&gt; Yahoo Entertainment
+## 60                &lt;NA&gt; Yahoo Entertainment
+## 61                &lt;NA&gt;       Thekitchn.com
+## 62                &lt;NA&gt; Yahoo Entertainment
+## 63                &lt;NA&gt;       BuzzFeed News
+## 64                &lt;NA&gt;           Pitchfork
+## 65                time                Time
+## 66                &lt;NA&gt;        The Guardian
+## 67                &lt;NA&gt;         MarketWatch
+## 68                &lt;NA&gt; Yahoo Entertainment
+## 69                &lt;NA&gt; Yahoo Entertainment
+## 70                &lt;NA&gt;       Thekitchn.com
+## 71                &lt;NA&gt; Yahoo Entertainment
+## 72                &lt;NA&gt; Yahoo Entertainment
+## 73                &lt;NA&gt; Yahoo Entertainment
+## 74                &lt;NA&gt; Yahoo Entertainment
+## 75                &lt;NA&gt;       Thekitchn.com
+## 76                &lt;NA&gt;         MarketWatch
+## 77                &lt;NA&gt;        Adafruit.com
+## 78                &lt;NA&gt;            GameSpot
+## 79                &lt;NA&gt;             INSIDER
+## 80                &lt;NA&gt;        Adafruit.com
+## 81                &lt;NA&gt;        Theonion.com
+## 82            politico            Politico
+## 83                &lt;NA&gt;        Theonion.com
+## 84                &lt;NA&gt;         Fashionista
+## 85                &lt;NA&gt;       Rolling Stone
+## 86                &lt;NA&gt;                 TMZ
+## 87                &lt;NA&gt;           HYPEBEAST
+## 88                &lt;NA&gt;         MarketWatch
+## 89                &lt;NA&gt;        Quartz India
+## 90                &lt;NA&gt;               iMore
+## 91  al-jazeera-english  Al Jazeera English
+## 92                &lt;NA&gt;                 Vox
+## 93           bloomberg           Bloomberg
+## 94            politico            Politico
+## 95           the-hindu           The Hindu
+## 96                &lt;NA&gt;              Adweek
+## 97                &lt;NA&gt;      The Points Guy
+## 98                &lt;NA&gt;  Theparisreview.org
+## 99                &lt;NA&gt;            Deadline
+## 100               &lt;NA&gt;                 NPR
+##                                                                                                                                             title
+## 1                                                                                  Stephen Colbert Celebrates Americaâ\200\231s New Holiday, Juneteenth
+## 2                                                                                 Obamacare, Juneteenth, Comedies: Your Thursday Evening Briefing
+## 3                                                                                          What Does It Mean to Be Crowned â\200\230Miss Juneteenthâ\200\231?
+## 4                                                                              Most Americans Know Little or Nothing About Juneteenth, Poll Finds
+## 5                                                                                          House Passes Bill to Make Juneteenth a Federal Holiday
+## 6                                                                                             Biden Signs Law Making Juneteenth a Federal Holiday
+## 7                                                                                    Juneteenth: 7 Events for Celebrating the Holiday in New York
+## 8                                                                           These 14 House Republicans Voted Against a Juneteenth Federal Holiday
+## 9                                                                             Juneteenth: What is the newest US holiday and how is it celebrated?
+## 10                                                                                     N.Y.C. Workers Will Not Have a Paid Day Off for Juneteenth
+## 11                                                                                       More Companies Have Designated Juneteenth a Paid Holiday
+## 12                                                                    JPMorgan, UBS to allow U.S. employees take day off for Juneteenth - Reuters
+## 13                                                                      Factbox: What is Juneteenth and how are people marking the day? - Reuters
+## 14                                                           Biden to sign Juneteenth bill, creating holiday marking U.S. slavery&#39;s end - Reuters
+## 15                                                     U.S. CDC delays meet on heart risk from COVID-19 shots due to Juneteenth holiday - Reuters
+## 16                                                   U.S. SEC to close its offices Friday to observe the new Juneteenth federal holiday - Reuters
+## 17                                                              U.S. Congress votes to create Juneteenth holiday marking end of slavery - Reuters
+## 18                                               U.S. SEC to close its offices Friday to observe the new Juneteenth federal holiday - Reuters.com
+## 19                                                                                                    The self-defeating opposition to Juneteenth
+## 20                                                                  Plantation removes racist Juneteenth celebration advertisement, cancels event
+## 21                                                                                                                             Juneteenth T-Shirt
+## 22                                                                                   How 14 Black creatives got 800 companies to honor Juneteenth
+## 23                                                                         Senate Unanimously Approves A Bill To Make Juneteenth A Public Holiday
+## 24                                                                 Biden makes Juneteenth a national holiday, giving federal employees Friday off
+## 25                                                            Meet the New CEO Laying Groundwork for Corporate Equity Just In Time for Juneteenth
+## 26                                                               Juneteenth Is Now A U.S. Holiday. Here&#39;s One Woman Behind The Decades-Long Fight
+## 27                                                                             Trump claimed that he &#39;made Juneteenth very famous,&#39; new book says
+## 28                                                                                   Juneteenth 2021: Hereâ\200\231s a list of weekend events across SC
+## 29                                          RPT-UPDATE 1-JPMorgan, UBS, Wells Fargo to allow U.S. employees take day off for Juneteenth - Reuters
+## 30                                                              Juneteenth: US will soon have new holiday commemorating end of slavery - CTV News
+## 31                                                                                               Juneteenth may finally get its due from Congress
+## 32                                                                      Biden to sign bill making Juneteenth a U.S. federal holiday - Global News
+## 33                                                                                  Donâ\200\231t Treat Juneteenth As Another Day Off. Do This Instead.
+## 34                                                                                    EXPLAINER: The story of Juneteenth, the new federal holiday
+## 35                                                                                      Senate approves bill to make Juneteenth a federal holiday
+## 36                                                                                                 What the Push to Celebrate Juneteenth Conceals
+## 37                                                                               Congress passes legislation to make Juneteenth a federal holiday
+## 38                                          This Juneteenth, erase Robert E. Leeâ\200\231s name, but not his history as this nationâ\200\231s enemy | Opinion
+## 39                                                                     â\200\230Not just a day offâ\200\231: Town of Cary approves Juneteenth as paid holiday
+## 40                                                          NC plantation calls slaveowner a â\200\230white refugeeâ\200\231 in racist Juneteenth event promo
+## 41                                 The Republicans who voted against the Juneteenth holiday think it will â\200\230create confusionâ\200\231 alongside July 4
+## 42                                                                                                                          : What is Juneteenth?
+## 43                                                           Meck ends contract with Historic Latta nonprofit over controversial Juneteenth event
+## 44                                                             NC plantation: No apology, slams mayor and other critics of Juneteenth event promo
+## 45                                                                         Why Federal Recognition of Juneteenth Feels Like Such an Empty Gesture
+## 46                                                                         94-Year-Old Has â\200\230Off The Chainâ\200\231 Response To New Juneteenth Holiday
+## 47                                                         Juneteenth: &quot;Emancipation is a marker of progress for white Americans, not black ones&quot;
+## 48                                                                                                Biden: Signing Juneteenth holiday bill an honor
+## 49                                Jimmy Fallon and Stephen Colbert cheer the new Juneteenth holiday, jeer the 14 congressmen who voted against it
+## 50                                                                      Republicansâ\200\231 Worst Excuses for Not Wanting a Juneteenth Federal Holiday
+## 51                                                                                                 US poised to make Juneteenth a federal holiday
+## 52                                                  Biden signs Juneteenth bill, infrastructure bill, US Open tees off: 5 things to know Thursday
+## 53                                                        Juneteenth is a celebration of freedom from slavery. But it didn&#39;t mean freedom for all
+## 54                                                              House to vote Wednesday on bill to make June 19, or Juneteenth, a federal holiday
+## 55                                                              Biden signs bill making Juneteenth, marking the end of slavery, a federal holiday
+## 56                                                                     Usher attends signing to make Juneteenth a federal holiday: &#39;Long overdue&#39;
+## 57                                                                                    44 Recipes From Black Food Bloggers to Celebrate Juneteenth
+## 58                                                                                            Juneteenth is being hijacked from African-Americans
+## 59                                                                    Chicago mayor changes course, announces Juneteenth an official city holiday
+## 60                                                                                      On The Vine: This Juneteenth Iâ\200\231m thankful for hypocrisy
+## 61                                                                           Meiko Temple&#39;s Watermelon Limeade Belongs at Your Juneteenth Cookout
+## 62                                                                                    Event on Juneteenth depicting fugitive slave owner canceled
+## 63                                                Congress Has Made Juneteenth A National Holiday. Just Donâ\200\231t Talk About The Legacy Of Slavery.
+## 64                                                                                         Bandcamp Announces Second Annual Juneteenth Fundraiser
+## 65             Juneteenth Isnâ\200\231t Just a Celebration of the End of Slavery. We Also Honor the Black Americans Who Helped Create Their Own Freedom
+## 66                                              Biden signs bill marking Juneteenth as federal holiday celebrating end of slavery in US â\200“ video
+## 67                                                                                    Outside the Box: For Juneteenth, itâ\200\231s time for a new flag
+## 68                                                          Juneteenth is now a federal holiday. Hereâ\200\231s what will be closed in Kansas City area
+## 69                                          American celebrations of Juneteenth continue to multiply 158 years following the abolition of slavery
+## 70                                                                     Will Coleman&#39;s Southern-Inspired Trifle Will Be a New Juneteenth Tradition
+## 71                                                            &#39;Red Drinks for Juneteenth,&#39; a free, virtual event from Los Angeles Times Food Bowl
+## 72                                                            Biden signs law making Juneteenth a federal holiday â\200” but some remain unimpressed
+## 73                                                                 You never forget your first Juneteenth. Let these Black Angelenos tell you why
+## 74                                                                             Juneteenth is now a federal holiday. How can I celebrate in Miami?
+## 75                                                                Meiko Temple&#39;s Kansas City-Style BBQ Chicken Wings Are a Juneteenth Showstopper
+## 76                                                                     Capitol Report: When does the Juneteenth holiday go into effect? Right now
+## 77                                                                                  Adafruit Celebrates Juneteenth 2021 #Juneteenth #Emancipation
+## 78                                                                                           Knockout City Adding Free Juneteenth Items This Week
+## 79                    A North Carolina plantation canceled a Juneteenth event that would have told the stories of &#39;white refugees&#39; after backlash
+## 80                                                                                                                             Juneteenth at NYPL
+## 81                                       Senate Votes To Make Juneteenth Federal Holiday So Long As No One Thinks Too Hard About Its Significance
+## 82                                                                                        Senate passes bill to make Juneteenth a federal holiday
+## 83                                                                                                             Juneteenth Becomes Federal Holiday
+## 84                            Must Read: Dolce &amp; Gabbana Is Still Not Welcome in China, The Significance of Juneteenth From a Fashion Perspective
+## 85                                                                           Nile Rodgers, Chic, Darius Rucker to Perform at Juneteenth Unityfest
+## 86                                                                                   President Biden Signs Bill Making Juneteenth Federal Holiday
+## 87                                                               This Juneteenth NFT Fundraiser and Gallery Will Spotlight Global Black Creatives
+## 88  The Value Gap: â\200\230None of us are free until weâ\200\231re all freeâ\200\231: Opal Lee, 94, has campaigned for years to make Juneteenth a national holiday
+## 89                                                                               Juneteenth is finally a US national holidayâ\200”several years late
+## 90                                                                        Apple Pay encourages users to shop Black-owned businesses on Juneteenth
+## 91                                                                                   US Congress votes to make â\200\230Juneteenthâ\200\231 a federal holiday
+## 92                                                                     Ibram X. Kendi on anti-racism, Juneteenth, and the reckoning that wasnâ\200\231t
+## 93                                                                                     Weekly Watchlist: Biden Makes Juneteenth a Federal Holiday
+## 94                                               &#39;This is a day of profound weight&#39;: Biden signs law establishing Juneteenth as a federal holiday
+## 95                                                                                                      U.S. to make Juneteenth a federal holiday
+## 96                                                                                                          Facebook Details Its Juneteenth Plans
+## 97                                                                  Congress passes bill to make Juneteenth, Emancipation Day, a national holiday
+## 98                                                                                                            Celebrating Juneteenth in Galveston
+## 99                                                                              AMC Entertainment Sets Showcase Of Black-Led Films For Juneteenth
+## 100                                                                             Songs For Freedom: A Juneteenth Playlist From Pianist Lara Downes
+##                                                                                                                                                                                                                                                                            description
+## 1                                                                                                                                              June 19 is â\200œalso known as Macklemoreâ\200\231s birthday, but havenâ\200\231t Black Americans suffered enough?â\200\235 Colbert joked on Thursday night.
+## 2                                                                                                                                                                                                                                Hereâ\200\231s what you need to know at the end of the day.
+## 3                                                                                                                                      For contestants, itâ\200\231s a pageant, yes, but also a place to celebrate Black sisterhood and promote a deeper understanding of a complex holiday.
+## 4                                                                                Academics believe that increases in the number of Americans familiar with the holiday, which commemorates the end of slavery in the U.S., may be a result of last summerâ\200\231s protests against racism.
+## 5                                                                                                                                          The measure would designate June 19 as a federal holiday to commemorate the end of slavery. More than a dozen Republicans voted against it.
+## 6                                                                                                                                                                        The law went into effect immediately, making Friday the first federal Juneteenth holiday in American history.
+## 7                                                                                                                                       On Saturday, many of the cityâ\200\231s cultural venues are holding performances and parties to mark the emancipation of enslaved African Americans.
+## 8                                                                                                  Some objected to the phrase â\200œIndependence Dayâ\200\235 in the formal name of the holiday celebrating the end of slavery. Others said federal workers did not need another paid day off.
+## 9                                                                                                                                                                                     The commemoration of the last enslaved black American being freed is now an official US holiday.
+## 10                                                                                                               Mayor Bill de Blasio vowed last year that Juneteenth would be an official holiday. City workers learned this week they would not be getting a paid day off after all.
+## 11                                                              As the Senate passes Juneteenth National Independence Day Act, corporations including Best Buy and National Grid join a growing list of businesses who&#39;ve recognized the occasion in the wake of George Floyd&#39;s death.
+## 12                                                                                                  JPMorgan Chase &amp; Co (JPM.N) will give its U.S. employees one floating day off for the newly implemented Juneteenth federal holiday, according to an internal memo seen by Reuters.
+## 13                                                                                                                           U.S. President Joe Biden signed a bill into law on Thursday, making June 19 a federal holiday commemorating the emancipation of enslaved Black Americans.
+## 14                                                                                                       U.S. President Joe Biden will sign a bill into law on Thursday afternoon to make June 19 a federal holiday commemorating the end of the legal enslavement of Black Americans.
+## 15                                                                 The U.S. Centers for Disease Control and Prevention (CDC) on Thursday put off its meeting to discuss the occurrence of myocarditis among people who received COVID-19 shots due to the Juneteenth national holiday.
+## 16                                                                                               The U.S. Securities and Exchange Commission (SEC) will close its offices on Friday in observance of the newly implemented Juneteenth federal holiday, the agency said in a statement.
+## 17                                                        The U.S. House of Representatives on Wednesday overwhelmingly passed and sent to President Joe Biden a bill making June 19, or &quot;Juneteenth,&quot; a federal holiday commemorating the end of legal enslavement ofBlack Americans.
+## 18                                                                                               The U.S. Securities and Exchange Commission (SEC) will close its offices on Friday in observance of the newly implemented Juneteenth federal holiday, the agency said in a statement.
+## 19                                                                                                                                                                                                                                         The self-defeating opposition to Juneteenth
+## 20              Outrage erupted when social media spotted advertisements for the Historic Latta Plantation&#39;s racist Juneteenth celebration. Removing the advertisements did not erase the terrible, racist language the plantation used to promote its white people worshipping eveâ\200¦
+## 21        Bed-Stuyâ\200\231s BLK MKT Vintageâ\200”founded by Jannah Handy and Kiyanna Stewartâ\200”specializes in second-hand delights from magazines to buttons, but this Juneteenth T-shirt is one of their own, new products. Commemorating and celebrating the holiday (the anniversary of â\200¦
+## 22             Meet the designers whose activism got companies to commemorate the end of slavery.\nIf you have the day off of work on June 18 or 19, you can thank a small collective of Black artists and creative professionals in the Bay Area who call themselves Hella Creativâ\200¦
+## 23                                                                                                                                                                           Juneteenth is an annual celebration held on June 19 to commemorate the end of chattel slavery in America.
+## 24                                                                                                                                                                   June 19, known as Juneteenth, marks the end of slavery in the US. It is the first new federal holiday in decades.
+## 25                                                         Sandra Quince was named a diversity-and-inclusion coalition&#39;s first-ever CEO days before the anniversary of George Floyd&#39;s death and a month before Juneteenth 2021, and the symbolism and opportunity are not lost on her.
+## 26                                                                                                                               &quot;We can all finally celebrate. The whole country together,&quot; says the 94-year-old who has been working for years to make Juneteenth a federal holiday.
+## 27                                                                                                                                       Trump said &quot;nobody had heard of&quot; the holiday, which commemorates the liberation of enslaved Black Americans, according to a forthcoming book.
+## 28                                                                                                                                                                                                                                              There are events all across the state.
+## 29                                                                                                          JPMorgan Chase &amp; Co will give its U.S. employees one floating day off for the newly implemented Juneteenth federal holiday, according to an internal memo seen by Reuters.
+## 30  &lt;ol&gt;&lt;li&gt;Juneteenth: US will soon have new holiday commemorating end of slaveryÂ Â CTV News\r\n&lt;/li&gt;&lt;li&gt;Juneteenth: US to add federal holiday marking end of slaveryÂ Â BBC News\r\n&lt;/li&gt;&lt;li&gt;Congress passes bill making Juneteenth a federal holidayÂ Â CNN \r\n&lt;/li&gt;&lt;li&gt;Juan Wâ\200¦
+## 31                                                                                                                                                                                                                                    Juneteenth may finally get its due from Congress
+## 32  &lt;ol&gt;&lt;li&gt;Biden to sign bill making Juneteenth a U.S. federal holidayÂ Â Global News\r\n&lt;/li&gt;&lt;li&gt;Juneteenth: US to add federal holiday marking end of slaveryÂ Â BBC News\r\n&lt;/li&gt;&lt;li&gt;House passes bill to make Juneteenth a federal holidayÂ Â Washington Post\r\n&lt;/li&gt;&lt;li&gt;I donâ\200¦
+## 33                                                                                                                                                                                  Here&#39;s how to make Juneteenth a celebration and a day of learning about our nation&#39;s true history.
+## 34                                                                                               The United States government is catching up with Black people who have been commemorating the end of slavery in the United States for generations with a day called â\200œJuneteenth.â\200\235
+## 35                                                                                                                                                           The Senate has passed a bill that would make Juneteenth, or June 19th, a federal holiday commemorating the end of slavery
+## 36                                                                                               The recent effort to make the anniversary a federal holiday is undermined by the simultaneous attack on critical race theory and curricula focused on the enduring legacy of slavery.
+## 37                                                                                                                 Congress has moved to establish a new national holiday, this time for Juneteenth. It&#39;s the first federal holiday approved since Martin Luther King Jr. Day in 1983.
+## 38                                                                                                                       Late summer at West Point is stiflingly hot. But, as a brand-new cadet standing nervously in military formation, I barely noticed. I was consumed with the...
+## 39                                                                                                                         Cary joins other Triangle area municipalities in formally recognizing the holiday commemorating emancipation of enslaved African Americans in the United...
+## 40                                                                                                                                                           Historic Latta Plantation in Huntersville has since taken down promotional material for the event. Hereâ\200\231s what it said.
+## 41                                                                                                                                                                          The Republicans who voted against the Juneteenth holiday think it will &#39;create confusion&#39; alongside July 4
+## 42                                                                                                                                                                                         Nearly 3 in 10 U.S. adults say they know &#39;nothing at all&#39; about Saturday&#39;s June 19 holiday.
+## 43                                                                                                                                     â\200œThe outrage in the community is realâ\200\235 over Historic Latta Plantationâ\200\231s planned event, Mecklenburg County Commissioner Mark Jerrell said.
+## 44                                                                                                                                         The Historic Latta Plantation site manager called out Charlotte Mayor Vi Lyles as well as the media over controversy about the racist promo
+## 45                                                                                                                                                                                                         Juneteenthâ\200\231s government recognition needs to come along with real action.
+## 46                                                                                                                                                                                                   &quot;Iâ\200\231m humbled by it, I truly am,&quot; said the &quot;Grandmother of Juneteenth&quot; Opal Lee.
+## 47              Tomorrow is Juneteenth, commemorating the freeing of enslaved Black people in Texas on June 19, 1865. That was the day that Maj. Gen. Gordon Granger delivered a message to the people of Galveston, Texas that the Union had won the Civil War and they could enfoâ\200¦
+## 48                                                                                                                    President Biden signed the Juneteenth National Independence Day Act into law on Thursday, commemorating the end of slavery in the U.S., and making June 19 a ...
+## 49                                                                                                                                                                     Jimmy Fallon and Stephen Colbert cheer the new Juneteenth holiday, jeer the 14 congressmen who voted against it
+## 50                                                                                                                                                                                               It&#39;s part of a plot to take over the country with Critical Race Theory, or something.
+## 51              The commemoration marks when news of the Emancipation Proclamation reached Texas on 19 June 1865, ending slaveryThe United States will soon have a new federal holiday commemorating the end of slavery in the nation.Congress has approved a bill that would make â\200¦
+## 52                                                                                                                               President Biden will sign the bill to make Juneteenth a federal holiday, the U.S. Open tees off at Torrey Pines and more news to start your Thursday.
+## 53                                                                                                                               Enslaved people in Native American territories waited later for freedom. And Black Codes after the Civil War stalled much of emancipation&#39;s progress.
+## 54                                                                                                                                       The House will vote on legislation Wednesday to make Juneteenth a federal holidayÂ â\200” just one day afterÂ the Senate passed the legislation.
+## 55                                                                                                                                                                        President Joe Biden is signing a bill to make Juneteenth a federal holiday commemorating the end of slavery.
+## 56                                                                                                                                                         &quot;It&#39;s always been a very important holiday,&quot; says Tina Knowles-Lawson about Juneteenth. &quot;Everyone needs to know the truth.&quot;
+## 57              This year marks the 156th commemoration of Juneteenth. The holiday has largely been celebrated in Texas and certain pockets throughout the American South, but in recent years, people across America and even around the world have taken an interest in what Juneâ\200¦
+## 58            Thereâ\200\231s nothing on Earth that gets stolen from more than Black culture. From our bodies being taken from Africa to every part of our identities being appropriated and fawned over, as infuriating as it may be, it makes sense that America would want to steal ouâ\200¦
+## 59                                                                                                                    â\200œI, like many others, didnâ\200\231t even know anything about Juneteenth until I was an adult,â\200\235 Chicago Mayor Lori Lightfoot said Monday to kick off Juneteenth...
+## 60                                                                                                              Thank you kindly for the â\200œrecognition,â\200\235 making Juneteenth a federal holiday, the literal least you could do â\200” coming some 150-plus years after weâ\200\231d already...
+## 61                                                                                                                                                                                                                                   It&#39;s refreshing, tangy, and sweet. \nREAD MORE...
+## 62                                                                                                                 WINSTON-SALEM, N.C. (AP) â\200” Officials in North Carolina have denounced plans â\200” now canceled â\200” by a historic museum to put on a reenactment of a white slave...
+## 63                                                                                       As conservatives seek to ban critical race theory from schools, many Black Americans wonder if children will fully understand the new holiday marking the end of slavery.View Entire Post â\200º
+## 64                                                                                                                                                                                          The site will donate 100% of its share of sales to the NAACP Legal Defense Fund on June 18
+## 65                                                                                                                                  The common story of June 19 focuses on one white man. If you ask Black people, Juneteenth marks the day Black Americans created their own freedom.
+## 66              The US will officially recognize Juneteenth as a federal holiday on 19 June after Joe Biden signed a bill into law which commemorates the end of slavery in the country. The president described a day to remember the moral stain of slavery but also to celebrateâ\200¦
+## 67                                                                                                                                                                                                      Singer Macy Gray says the flag should be redesigned to represent all Americans
+## 68                                                                                                                                                                                   Missouri, federal and Kansas City offices will be closed Friday in observance of the new holiday.
+## 69                                                                                                                       Juneteenth is the recognition and celebration of Black liberation in the U.S. The reclamation of the day, for many Black Americans, makes note of both the...
+## 70                                                                                                                                                                                         It features three of his favorite things: peaches, iced tea, and pound cake. \nREAD MORE...
+## 71                                                                                                                           Celebrate Juneteenth with a free virtual event June 15 from 6 to 7 p.m., during which L.A. chefs and restaurateurs will talk about the holiday&#39;s Black...
+## 72                                                                                                                    Exclusive: How will Washington quell the disdain in the Black community over Juneteenth becoming a federal holiday when voting rights and police reform bills...
+## 73                                                                                                                                                                                                                                    Black L.A. reflects on first Juneteenth memories
+## 74                                                                                                                                                                                      Are you tired of dealing with a perpetual loop of Zoom meetings and Wi-Fi connectivity issues?
+## 75                                                                                                                                                                                                                                     Great for the grill or the oven. \nREAD MORE...
+## 76                                                                                               As Washington policymakers establish June 19, known as Juneteenth, as a new federal holiday, the U.S. Office of Personnel Management said most federal employees will get Friday off.
+## 77              June 19 is Juneteenth; a celebration of the emancipation of the last slaves in the US. This holiday deserves all the recognition.Last year Adafruit added Juneteenth as an official holiday for all Adafruit employees. Since it falls on a Saturday this year, theâ\200¦
+## 78              EA&#39;s multiplayer dodgeball-battler Knockout City is getting a batch of Juneteenth related player icons later this week in its in-game shop. The icons will be free for all players.Juneteenth is celebrated on June 19 every year, and is the date used to mark theâ\200¦
+## 79                                                                                                                                                              June 19th or Juneteenth is commemorated by many Black Americans as an independence day celebrating the end of slavery.
+## 80              NYPL has published a great list of ways to celebrate Juneteenth, including events like the Schomburg Center Literary Festivals Reading the African Diaspora and Words Like Freedom, Juneteenth: The Lot Radio at the Library for the Performing Arts and more, and â\200¦
+## 81        WASHINGTONâ\200”In a rare unanimous vote, the Senate passed a bill Wednesday to make Juneteenth a federal holiday so long as no one thinks too hard about its significance. â\200œThis is a day to barbecue and get drunk, a day to ask your coworkers what theyâ\200\231re planning â\200¦
+## 82                                                                                                                                                              No lawmaker objected to passage of the legislation for commemorating the end of slavery, and it now goes to the House.
+## 83                               President Biden has signed the Juneteenth National Independence Day Act, making June 19 a federal holiday to commemorate the day in 1865 when the last enslaved African Americans in Texas were granted their freedom. What do you think?Read more...
+## 84             These are the stories making headlines in fashion on Wednesday. Dolce &amp; Gabbana is still not welcome in ChinaÂ Hong Kong singer Karen Mok came under fire for wearing multiple Dolce &amp; Gabbana pieces in her new music video. According to Business of Fashion, Mok â\200¦
+## 85                                                                                                                                                                                                        Earth, Wind &amp; Fire, Black Pumas, Khruangbin also in lineup for virtual event
+## 86                             President Biden just made it official ... there&#39;s now a federal holiday marking a milestone in the abolishment of slavery in the United States. Biden put pen to paper Thursday, signing a landmark bill establishing June 19 as Juneteenth Nationalâ\200¦
+## 87          17-year-old prodigious artist and activist Diana Sinclair is commemorating Juneteenth â\200” the annual holiday celebrating the end of slavery in the United States â\200” with the curation of an art exhibition, public installation and NFT auction fundraiser in New Yorkâ\200¦
+## 88                                                                                                                                             â\200\230Iâ\200\231m wanting Juneteenth to be celebrated from the 19th of June to the Fourth of July. We werenâ\200\231t free the Fourth of July 1776.â\200\231
+## 89                                                                                                                                                   Emancipation Day, also marking the end of slavery, already exists as a holiday in Canada and South Africa, among other countries.
+## 90     What you need to know\n\n\nApple is encouraging Apple Pay users to shop Black-owned businesses on Juneteenth.\nThe company has highlighted a number of businesses for customers to shop.\n\n\nThis Juneteenth, shop Black-owned businesses. With Apple Pay.\n\nApple is encoâ\200¦
+## 91                                                                                                                                                                 Congress sends bill to President Biden making June 19 a federal holiday commemorating the end of slavery in the US.
+## 92                                                                                                                                                                                            The author of How to Be an Antiracist joined for a special episode of Vox Conversations.
+## 93                                                                    Greetings, QuickTake readers! This week, Biden creates the first new national holiday since Martin Luther King Jr. Day. Plus: China gets one step closer to building its own space station. Stream now for free.
+## 94                                                                                                                                                    Biden said that he hopes by establishing the holiday, &quot;all Americans can feel the power of this day and learn from our history.&quot;
+## 95                                                                            The United States will soon have a new federal holiday commemorating the end of slavery.The House voted 415-14 on Wednesday to make Juneteenth, or June 19th, the 12th federal holiday, and President Jo
+## 96              Businesswoman and fashion designer Tina Knowles-Lawson is helping Facebook celebrate Juneteenth (Saturday, June 19) with a video detailing her family&#39;s deep connection with the holiday, their Texas roots, family memories and the beauty of how Black Americans â\200¦
+## 97              President Joe Biden is expected to sign a bill into law Thursday to make Juneteenth, the commemoration of the end of U.S. slavery, a federal holiday. The legislation, officially named The Juneteenth National Independence Day Act, was approved by the House of â\200¦
+## 98             The long-held myth goes that on June 19, 1865, Union genÂ­eral Gordon Granger stood on the balcony of Ashton Villa in Galveston, Texas, and read the order that announced the end of slavery. Though no contemporaneous evidence exists to specifically support the â\200¦
+## 99              AMC Entertainment will present a weeklong AMC Black Picture Showcase at select theaters nationwide starting Friday to celebrate Juneteenth. The newly established national holiday commemorates the abolishment of slavery in the U.S. The exhibitor said tickets wâ\200¦
+## 100                                                                                                                                                               Music offers freedom. Freedom of expression â\200” a way to rejoice and to mourn, to offer comfort, to call for change.
+##                                                                                                                                                                                      url
+## 1                                                                                                     https://www.nytimes.com/2021/06/18/arts/television/stephen-colbert-juneteenth.html
+## 2                                                                                                    https://www.nytimes.com/2021/06/17/briefing/obamacare-juneteenth-supreme-court.html
+## 3                                                                                                                      https://www.nytimes.com/2021/06/14/style/juneteenth-pageants.html
+## 4                                                                                                                 https://www.nytimes.com/2021/06/16/us/politics/juneteenth-holiday.html
+## 5                                                                                                         https://www.nytimes.com/2021/06/16/us/politics/juneteenth-federal-holiday.html
+## 6                                                                                                           https://www.nytimes.com/2021/06/17/us/politics/juneteenth-holiday-biden.html
+## 7                                                                                                          https://www.nytimes.com/2021/06/17/arts/music/juneteenth-new-york-events.html
+## 8                                                                                                              https://www.nytimes.com/2021/06/17/us/republicans-against-juneteenth.html
+## 9                                                                                                                                    https://www.bbc.co.uk/news/world-us-canada-57515192
+## 10                                                                                               https://www.nytimes.com/2021/06/17/nyregion/juneteenth-not-a-holiday-nyc-employees.html
+## 11                                                                                                                                           https://www.entrepreneur.com/article/374747
+## 12                                                                          https://www.reuters.com/business/finance/jpmorgan-ubs-allow-us-employees-take-day-off-juneteenth-2021-06-17/
+## 13                                                                                            https://www.reuters.com/world/us/what-is-juneteenth-how-are-people-marking-day-2021-06-18/
+## 14                                                                      https://www.reuters.com/world/us/biden-sign-juneteenth-bill-creating-holiday-marking-us-slaverys-end-2021-06-17/
+## 15                                                                                                                      https://www.reuters.com/article/usa-cdc-juneteenth-idUSL3N2NZ4JX
+## 16                                                                   https://www.reuters.com/business/us-sec-close-its-offices-friday-observe-new-juneteenth-federal-holiday-2021-06-17/
+## 17                                                                          https://www.reuters.com/world/us/us-congress-votes-create-juneteenth-holiday-marking-end-slavery-2021-06-16/
+## 18                                                                                                                      https://www.reuters.com/article/us-usa-sec-holiday-idUSKCN2DT2N9
+## 19                                                                                                            https://news.yahoo.com/self-defeating-opposition-juneteenth-214610235.html
+## 20                                                                   https://boingboing.net/2021/06/12/plantation-removes-racist-juneteenth-celebration-advertisement-cancels-event.html
+## 21                                                                                                                                        http://coolhunting.com/buy/juneteenth-t-shirt/
+## 22                                                                                     https://www.fastcompany.com/90648158/how-14-black-creatives-got-800-companies-to-honor-juneteenth
+## 23                                                                      https://www.npr.org/2021/06/15/1006934154/senate-unanimously-approves-a-bill-to-make-juneteenth-a-public-holiday
+## 24                                                                           https://www.businessinsider.com/juneteenth-federal-holiday-biden-signs-bill-employees-get-friday-off-2021-6
+## 25                                                                                                                                           https://www.entrepreneur.com/article/374765
+## 26                                                                                                      https://www.npr.org/2021/06/17/1007498876/how-juneteenth-became-national-holiday
+## 27                                                                                                          https://www.businessinsider.com/trump-claim-he-made-juneteenth-famous-2021-6
+## 28                                                                                                             https://news.yahoo.com/juneteenth-2021-list-weekend-events-160806466.html
+## 29                                                                                                             https://www.reuters.com/article/jpmorgan-holiday-juneteenth-idUSL3N2O02DC
+## 30                                                                       https://www.ctvnews.ca/world/u-s-president-joe-biden-to-sign-bill-making-juneteenth-a-federal-holiday-1.5474068
+## 31                                                                                                             https://news.yahoo.com/juneteenth-may-finally-due-congress-203837258.html
+## 32                                                                                                           https://globalnews.ca/news/7957685/joe-biden-juneteenth-federal-holiday-us/
+## 33                                                                                                    https://www.huffpost.com/entry/what-to-do-on-juneteenth_l_60c7c67be4b02df18f7f60da
+## 34                                                                                        https://abcnews.go.com/Lifestyle/wireStory/explainer-story-juneteenth-federal-holiday-78338317
+## 35                                                                               https://abcnews.go.com/Politics/wireStory/senate-approves-bill-make-juneteenth-federal-holiday-78303127
+## 36                                                                                   https://www.theatlantic.com/culture/archive/2021/06/what-push-celebrate-juneteenth-conceals/619246/
+## 37                                                                         https://abcnews.go.com/Politics/congress-passes-legislation-make-juneteenth-federal-holiday/story?id=78324593
+## 38                                                                                                                   https://news.yahoo.com/juneteenth-erase-robert-e-lee-184119919.html
+## 39                                                                                                              https://news.yahoo.com/town-cary-approves-juneteenth-paid-115933175.html
+## 40                                                                                                            https://news.yahoo.com/nc-plantation-calls-slaveowner-white-180941656.html
+## 41                                                                                                    https://news.yahoo.com/republicans-voted-against-juneteenth-holiday-153430744.html
+## 42                                                                                                                      https://www.marketwatch.com/story/what-is-juneteenth-11623865187
+## 43                                                                                                          https://news.yahoo.com/mecklenburg-end-contract-nc-plantation-010702465.html
+## 44                                                                                                                  https://news.yahoo.com/nc-plantation-no-apology-slams-195640833.html
+## 45                                                                                      https://slate.com/news-and-politics/2021/06/juneteenth-federal-holiday-recognition-symbolic.html
+## 46                                                                                             https://www.huffpost.com/entry/juneteenth-opal-lee-celebration_n_60cc5f7de4b0876cc93c49af
+## 47                                                             https://boingboing.net/2021/06/18/juneteenth-emancipation-is-a-marker-of-progress-for-white-americans-not-black-ones.html
+## 48                                                                                                           https://news.yahoo.com/biden-signing-juneteenth-holiday-bill-204417113.html
+## 49                                                                                                              https://news.yahoo.com/jimmy-fallon-stephen-colbert-cheer-084315450.html
+## 50                                                                         https://www.vice.com/en/article/y3dbww/republicans-worst-excuses-for-not-wanting-a-juneteenth-federal-holiday
+## 51                                                                                                   https://amp.theguardian.com/us-news/2021/jun/16/us-juneteenth-federal-holiday-biden
+## 52                                                                 https://www.usatoday.com/story/news/2021/06/17/biden-signs-juneteenth-bill-us-open-5-things-know-thursday/7717100002/
+## 53  https://www.usatoday.com/restricted/?return=https%3A%2F%2Fwww.usatoday.com%2Fstory%2Fnews%2Fnation%2F2021%2F06%2F18%2Fjuneteenth-slavery-freedom-delayed-celebration%2F7713722002%2F
+## 54                                                           https://www.usatoday.com/story/news/politics/2021/06/16/juneteenth-house-vote-bill-make-june-19-federal-holiday/7713301002/
+## 55                                                                              https://abcnews.go.com/Politics/biden-signs-bill-making-juneteenth-marking-end-slavery/story?id=78335485
+## 56                                                https://www.usatoday.com/story/entertainment/celebrities/2021/06/18/juneteenth-federal-holiday-celebrities-react-celebrate/7726515002/
+## 57                                                                                                                         https://food52.com/blog/26293-juneteenth-virtual-potluck-2021
+## 58                                                                                                   https://deadspin.com/juneteenth-is-being-hijacked-from-african-americans-1847130068
+## 59                                                                                                          https://news.yahoo.com/chicago-mayor-changes-course-announces-233100704.html
+## 60                                                                                                            https://news.yahoo.com/vine-juneteenth-m-thankful-hypocrisy-181044610.html
+## 61                                                                                                                                 https://www.thekitchn.com/watermelon-limeade-23173384
+## 62                                                                                                       https://news.yahoo.com/play-lamenting-confederacy-north-carolina-223157736.html
+## 63                                                                                 https://www.buzzfeednews.com/article/tasneemnashrulla/juneteenth-federal-holiday-critical-race-theory
+## 64                                                                                                    https://pitchfork.com/news/bandcamp-announces-second-annual-juneteenth-fundraiser/
+## 65                                                                                                                                         https://time.com/6073043/who-made-juneteenth/
+## 66                                     https://www.theguardian.com/world/video/2021/jun/17/biden-signs-bill-marking-juneteenth-as-federal-holiday-celebrating-end-of-slavery-in-us-video
+## 67                                                                                                  https://www.marketwatch.com/story/for-juneteenth-its-time-for-a-new-flag-11623958522
+## 68                                                                                                           https://news.yahoo.com/juneteenth-now-federal-holiday-closed-000020197.html
+## 69                                           https://news.yahoo.com/american-celebrations-of-juneteenth-continue-to-multiply-158-years-following-the-abolition-of-slavery-184206410.html
+## 70                                                                                                           https://www.thekitchn.com/peach-iced-tea-pound-cake-trifles-recipe-23169475
+## 71                                                                                                              https://news.yahoo.com/red-drinks-juneteenth-free-virtual-202433794.html
+## 72                                                                                                               https://news.yahoo.com/biden-signs-law-making-juneteenth-200500703.html
+## 73                                                                                                               https://news.yahoo.com/never-forget-first-juneteenth-let-233840408.html
+## 74                                                                                                        https://news.yahoo.com/juneteenth-now-federal-holiday-celebrate-110311445.html
+## 75                                                                                                                https://www.thekitchn.com/kansas-city-style-bbq-chicken-wings-23173382
+## 76                                                                               https://www.marketwatch.com/story/when-does-the-juneteenth-holiday-go-into-effect-right-now-11623958808
+## 77                                                                                     https://blog.adafruit.com/2021/06/15/adafruit-celebrates-juneteenth-2021-juneteenth-emancipation/
+## 78                                                                                  https://www.gamespot.com/articles/knockout-city-adding-free-juneteenth-items-this-week/1100-6492928/
+## 79                                                                                   https://www.insider.com/north-carolina-plantation-cancels-juneteenth-event-on-white-refugees-2021-6
+## 80                                                                                                                              https://blog.adafruit.com/2021/06/16/juneteenth-at-nypl/
+## 81                                                                                           https://www.theonion.com/senate-votes-to-make-juneteenth-federal-holiday-so-long-1847111858
+## 82                                                                                                 https://www.politico.com/news/2021/06/15/senate-passes-juneteenth-bill-holiday-494707
+## 83                                                                                                                https://www.theonion.com/juneteenth-becomes-federal-holiday-1847123153
+## 84                                                                                                               https://fashionista.com/2021/06/dolce-gabbana-karen-mok-china-criticism
+## 85                                                                                         https://www.rollingstone.com/music/music-news/nile-rodgers-chic-juneteenth-unityfest-1181815/
+## 86                                                                                          https://www.tmz.com/2021/06/17/president-biden-signs-bill-making-juneteenth-federal-holiday/
+## 87                                                                                                       https://hypebeast.com/2021/6/juneteenth-nft-fundraiser-gallery-digital-diaspora
+## 88                      https://www.marketwatch.com/story/none-of-us-are-free-until-were-all-free-opal-lee-94-has-campaigned-for-years-to-make-juneteenth-a-national-holiday-11623941587
+## 89                                                                                                https://qz.com/2022128/juneteenth-is-finally-a-us-national-holiday-several-years-late/
+## 90                                                                                               https://www.imore.com/apple-pay-encourages-users-shop-black-owned-businesses-juneteenth
+## 91                                                                                          https://www.aljazeera.com/news/2021/6/16/us-congress-votes-to-make-juneteeth-federal-holiday
+## 92                                                                                                     https://www.vox.com/22538592/ibram-x-kendi-juneteenth-racial-reckoning-antiracism
+## 93                                                                       https://www.bloomberg.com/news/newsletters/2021-06-17/weekly-watchlist-biden-makes-juneteenth-a-federal-holiday
+## 94                                                                          https://www.politico.com/news/2021/06/17/biden-signs-law-establishing-juneteenth-as-a-federal-holiday-495064
+## 95                                                                               https://www.thehindu.com/news/international/us-to-make-juneteenth-a-federal-holiday/article34843172.ece
+## 96                                                                                                                   https://www.adweek.com/media/facebook-details-its-juneteenth-plans/
+## 97                                                                                                        http://thepointsguy.com/news/congress-passes-bill-juneteenth-national-holiday/
+## 98                                                                                                   https://www.theparisreview.org/blog/2021/06/18/celebrating-juneteenth-in-galveston/
+## 99                                                                                     https://deadline.com/2021/06/amc-entertainment-juneteenth-showcase-do-the-right-thing-1234776436/
+## 100                                                      https://www.npr.org/sections/pictureshow/2021/06/18/1007389777/songs-for-freedom-a-juneteenth-playlist-from-pianist-lara-downes
+##                                                                                                                                                                                                                                                                                                                        urlToImage
+## 1                                                                                                                                                                                                                                       https://static01.nyt.com/images/2021/06/18/arts/18latenight/18latenight-facebookJumbo.png
+## 2                                                                                                                                                                      https://static01.nyt.com/images/2021/06/17/multimedia/17PMBriefing-SCOTUS-01-promo/merlin_188742447_54de205d-1244-4797-b5ba-068ac1859f3d-facebookJumbo.jpg
+## 3                                                                                                                                                                                                                     https://static01.nyt.com/images/2021/06/17/multimedia/15missjuneteenth4/15missjuneteenth4-facebookJumbo.jpg
+## 4                                                                                                                                                                                           https://static01.nyt.com/images/2021/06/15/us/15xp-juneteenth/merlin_187353909_f7d2f12c-4108-4ad0-b647-dfb69349bf04-facebookJumbo.jpg
+## 5                                                                                                                                                                                                                        https://static01.nyt.com/images/2021/06/16/us/politics/16dc-juneteenth/16dc-juneteenth-facebookJumbo.jpg
+## 6                                                                                                                                                                                https://static01.nyt.com/images/2021/06/17/multimedia/17dc-Juneteenth-01/merlin_189428856_b346e5c0-852d-400f-bf8b-9b652307dba0-facebookJumbo.jpg
+## 7                                                                                                                                                                                  https://static01.nyt.com/images/2021/06/16/arts/16juneteenth-roundup-2/merlin_189341973_15ee7212-2beb-432e-b935-fd347ed06881-facebookJumbo.jpg
+## 8                                                                                                                                                                                                             https://static01.nyt.com/images/2021/06/17/multimedia/17xp-juneteeenth-vote/17xp-juneteeenth-vote-facebookJumbo.jpg
+## 9                                                                                                                                                                                                                                        https://ichef.bbci.co.uk/news/1024/branded_news/1148C/production/_118969707_untitled.png
+## 10                                                                                                                                                                                                                            https://static01.nyt.com/images/2021/06/17/nyregion/17nyjuneteenth/17nyjuneteenth-facebookJumbo.jpg
+## 11                                                                                                                                                                                                                                         https://assets.entrepreneur.com/content/3x2/2000/1623857245-GettyImages-1320637700.jpg
+## 12                                                                                                                                            https://www.reuters.com/resizer/3PC6doH3UXWta_Kq7JE0bCkOxp0=/800x419/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/KYGVOATU4RKLBAUZ5ZZTP244EE.jpg
+## 13                                                                                                                                            https://www.reuters.com/resizer/f5b_CxET2cMlvVEMUVCupa5GD4U=/800x419/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/O5SIXYUUTZKKFN5SOJ7SW5SC4U.jpg
+## 14                                                                                                                                            https://www.reuters.com/resizer/9sJClrqOF9uWxsf5afHDwDKsNS0=/800x419/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/SD7MOK2STVJCVL6O53Q6RKJW7Q.jpg
+## 15                                                                                                                                                                                                                                                         https://s1.reutersmedia.net/resources_v2/images/rcom-default.png?w=800
+## 16                                                                                                                                            https://www.reuters.com/resizer/MKKqopu8oFTPxYw98LkUcDOGew4=/800x419/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/IOQW7HRU6VPY7PUF65C767WK2Q.jpg
+## 17                                                                                                                                            https://www.reuters.com/resizer/xOEHsQbMhXa3lNseuul5aKQA3ZQ=/800x419/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/3PRC3KNX3JL5RAXD62THL4CUMU.jpg
+## 18                                                                                                                                                                                                                                 https://static.reuters.com/resources/r/?m=02&amp;d=20210617&amp;t=2&amp;i=1566090243&amp;r=LYNXNPEH5G1EK&amp;w=800
+## 19                                                                                                                                                     https://s.yimg.com/uu/api/res/1.2/x5LjPtfpdNYY3MdYl6ZqnQ--~B/aD0xNjk7dz0zMDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/the_week_574/704755152c3243af6ec50d9d5bbe6b23
+## 20                                                                                                                                                                                                               https://i1.wp.com/boingboing.net/wp-content/uploads/2021/06/9HUOCBJ_latta_plantation_2.jpeg?fit=1140%2C641&amp;ssl=1
+## 21                                                                                                                                                                                                                          https://i0.wp.com/coolhunting.com/wp-content/uploads/2021/06/juneteenth-shirt.jpg?fit=720%2C720&amp;ssl=1
+## 22                                                                                                                                                              https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/wp-cms/uploads/2021/06/01-90648158-how-this-group-of-creatives-got-805-companies-to.jpg
+## 23                                                                                                                                                                                                         https://media.npr.org/assets/img/2021/06/15/ap_21159743395750_wide-f522ef240cad791b700ab0e65d5a9bc4c52e0777.jpg?s=1400
+## 24                                                                                                                                                                                                                                                          https://i.insider.com/60cbaf8920bd1300181c6fcd?width=1200&amp;format=jpeg
+## 25                                                                                                                                                                                                                                                https://assets.entrepreneur.com/content/3x2/2000/1623869599-SandraQheadshot.jpg
+## 26                                                                                                                                                                                                          https://media.npr.org/assets/img/2021/06/17/ap21167848888802_wide-8b39ace8b08e36d02337a27f2a7da5255b392f78.jpg?s=1400
+## 27                                                                                                                                                                                                                                                          https://i.insider.com/5f0ccfc33f7370403c78d455?width=1200&amp;format=jpeg
+## 28                                                                                                                                                                                                                                                     https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png
+## 29                                                                                                                                                                                                                                                         https://s1.reutersmedia.net/resources_v2/images/rcom-default.png?w=800
+## 30                                                                                                                                                                                                           https://www.ctvnews.ca/polopoly_fs/1.4991185.1592568167!/httpImage/image.jpg_gen/derivatives/landscape_620/image.jpg
+## 31                                                                                                                                                     https://s.yimg.com/uu/api/res/1.2/UW2N5xjk8RC2YIEWBtEzHw--~B/aD0xNjk7dz0zMDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/the_week_574/c36df197e797bc61a7b487072e64d23a
+## 32                                                                                                                                                                                                                       https://globalnews.ca/wp-content/uploads/2021/06/CP125227064.jpg?quality=85&amp;strip=all&amp;w=720&amp;h=379&amp;crop=1
+## 33                                                                                                                                                                                                                               https://img.huffingtonpost.com/asset/60cb98d1410000081c812a9f.jpg?cache=HD8JfKuPVF&amp;ops=1778_1000
+## 34                                                                                                                                                                                                                                    https://s.abcnews.com/images/Lifestyle/WireAP_131cd902323d4b36bd0b4689bc05a671_16x9_992.jpg
+## 35                                                                                                                                                                                                                                     https://s.abcnews.com/images/Politics/WireAP_7fb9a6f46f4e4b55b001fb25f6514029_16x9_992.jpg
+## 36                                                                                                                         https://cdn.theatlantic.com/thumbor/qsdkR77bA05XgofnNTtBT4pvaSA=/0x397:7716x4416/960x500/media/img/mt/2021/06/2021_06_17T200812Z_1752682399_RC2K2O937TXB_RTRMADP_3_USA_BIDEN_JUNETEENTHbw/original.jpg
+## 37                                                                                                                                                                                                                       https://s.abcnews.com/images/Politics/juneteenth-atlanta-gty-jc-210615_1623797667446_hpMain_16x9_992.jpg
+## 38                                                                                                                                       https://s.yimg.com/uu/api/res/1.2/MUKFX041spqM91PRjsKpBA--~B/aD03NjA7dz0xMTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/miami_herald_mcclatchy_975/2cbeda4c879674777cfa92af659ce377
+## 39                                                                                                                          https://s.yimg.com/uu/api/res/1.2/PhaXs_Txt9DZJNj6lunRSA--~B/aD03NjA7dz0xMTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/raleigh_news_and_observer_mcclatchy_712/d607330b580effe2e3afe845820b62a6
+## 40                                                                                                                                 https://s.yimg.com/uu/api/res/1.2/OnfdNI7spj3V2MoFpCbmXw--~B/aD0zOTA7dz0xMTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/charlotte_observer_mcclatchy_513/46b883c6f028edea80c9966bd153844f
+## 41                                                                                                                                                                                                                                                     https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png
+## 42                                                                                                                                                                                                                                                                                       https://images.mktw.net/im-354965/social
+## 43                                                                                                                          https://s.yimg.com/uu/api/res/1.2/XqjEt7w4Aztv6YK.ds.KIg--~B/aD0zOTA7dz0xMTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/raleigh_news_and_observer_mcclatchy_712/46b883c6f028edea80c9966bd153844f
+## 44                                                                                                                          https://s.yimg.com/uu/api/res/1.2/qZzYPWTITymvNAcO_r5bkQ--~B/aD02MTM7dz0xMTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/raleigh_news_and_observer_mcclatchy_712/d9545d1a44c2a845aac7d6b69b3816d9
+## 45                                                                                                                                                                                                      https://compote.slate.com/images/cfa2ed1f-a02c-4b51-8c20-00ead9451d63.jpeg?width=780&amp;height=520&amp;rect=6000x4000&amp;offset=0x0
+## 46                                                                                                                                                                                                                               https://img.huffingtonpost.com/asset/60cc65f53b0000ea19ec32c8.png?cache=dbykn0w0km&amp;ops=1778_1000
+## 47                                                                                                                                                                                                                             https://i0.wp.com/boingboing.net/wp-content/uploads/2021/06/screenshot-88.jpg?fit=1200%2C916&amp;ssl=1
+## 48                                                                                                                                                                                                 https://s.yimg.com/hd/cp-video-transcode/prod/2021-06/17/60cbb423d024e625dc93c0b1/60cbb42ebeaecd000137ac01_1280x720_FES_v1.jpg
+## 49                                                                                                                                                                                                                                                     https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png
+## 50                                                                                                                https://video-images.vice.com/articles/60cb551e398768009bef120a/lede/1623941070532-gettyimages-1233505126.jpeg?image-resize-opts=Y3JvcD0xeHc6MC44NDI3eGg7MHh3LDAuMTQxN3hoJnJlc2l6ZT0xMjAwOiomcmVzaXplPTEyMDA6Kg
+## 51  https://i.guim.co.uk/img/media/2fc70c24274d6e35ab0cb84298d699719d757d15/0_269_4974_2984/master/4974.jpg?width=1200&amp;height=630&amp;quality=85&amp;auto=format&amp;fit=crop&amp;overlay-align=bottom%2Cleft&amp;overlay-width=100p&amp;overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&amp;enable=upscale&amp;s=0e5f9efa3ae16be45239e77add94d573
+## 52                                                                                                                                                          https://www.gannett-cdn.com/presto/2021/06/16/USAT/a0b60bb8-9591-4769-890e-e639613ea390-Juneteenth_RectThumb.png?crop=1327,747,x0,y0&amp;width=1600&amp;height=800&amp;fit=bounds
+## 53                                                                                                                                                                                                                                                                                                                           &lt;NA&gt;
+## 54                                                                                                                 https://www.gannett-cdn.com/-mm-/7ed20b304600a5bc3c1cde9d031080712de15386/c=0-92-2500-1498/local/-/media/2020/09/11/USATODAY/usatsports/ghows_gallery-WL-619009981-588df6d4.jpg?width=1600&amp;height=800&amp;fit=crop
+## 55                                                                                                                                                                                                            https://s.abcnews.com/images/Politics/juneteenth-federal-holiday-04-ap-llr-210617_1623960681558_hpMain_16x9_992.jpg
+## 56                                                                                                                                                             https://www.gannett-cdn.com/presto/2021/04/12/USAT/00875900-1cc1-4a0c-9d0c-7e03e21daa5e-GTY_1209986395.JPG?crop=2357,1326,x0,y100&amp;width=1600&amp;height=800&amp;fit=bounds
+## 57                                                                                                                                                                    https://images.food52.com/0uByYGMTq_qikYFtlDZU2xFYY_U=/fit-in/1200x1200/52166fa5-f041-49fc-bb53-56ba0e3b4967--Chene-e_Today_Lemon_Sour_Cream_Pound_Cake.jpg
+## 58                                                                                                                                                                            https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/24a0c760beb0fec77a8d3f7901a93139.jpg
+## 59                                                                                                                                       https://s.yimg.com/uu/api/res/1.2/oRe1iY.Fmp7SAOsmNP.A.w--~B/aD02ODM7dz0xMDI0O2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/thegrio_yahoo_articles_946/f177e026a0b128ed904639cfe7a189f4
+## 60                                                                                                                          https://s.yimg.com/uu/api/res/1.2/S8aWodE2bWY4Pmpngo14lg--~B/aD02NDE7dz0xMTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/kansas_city_star_mcclatchy_articles_677/dd58ab282e7490b10c580e04f54945f0
+## 61                                                                                                                                                   https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1500,ar_3:2/k%2FPhoto%2FRecipes%2F2021-06-juneteenth-cocktail%2FKitchn_Juneteenth_Recipes_4
+## 62                                                                                                                                                                                                                                                     https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png
+## 63                                                                                                                                      https://img.buzzfeed.com/buzzfeed-static/static/2021-06/16/23/campaign_images/6d8befc08e8f/congress-has-made-juneteenth-a-national-holiday-j-2-757-1623886510-17_dblbig.jpg?resize=1200:*
+## 64                                                                                                                                                                                                                                   https://media.pitchfork.com/photos/5eff4056dc55f46b46324252/16:9/w_1280,c_limit/Bandcamp.jpg
+## 65                                                                                                                                                                                                                         https://api.time.com/wp-content/uploads/2021/06/who-made-juneteenth.jpg?quality=85&amp;w=1200&amp;h=628&amp;crop=1
+## 66  https://i.guim.co.uk/img/media/86616d9db997660e2925a23fe89b8ad0f1c59746/0_238_5621_3373/master/5621.jpg?width=1200&amp;height=630&amp;quality=85&amp;auto=format&amp;fit=crop&amp;overlay-align=bottom%2Cleft&amp;overlay-width=100p&amp;overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&amp;enable=upscale&amp;s=5d2517eae1d52a7d38dc2930563fe67c
+## 67                                                                                                                                                                                                                                                                                       https://images.mktw.net/im-355759/social
+## 68                                                                                                                          https://s.yimg.com/uu/api/res/1.2/NrqVVmtt4dZfKH52fkXPvg--~B/aD03ODY7dz0xMTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/kansas_city_star_mcclatchy_articles_677/3ae99993ee91c3aba865f2dc2e3009d3
+## 69                                                                                                                                                                                                                                      https://s.yimg.com/os/creatr-uploaded-images/2021-06/9b4df2a0-ce04-11eb-bf63-142cced07dd6
+## 70                                                                                                                                                           https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1500,ar_3:2/k%2FPhoto%2FRecipes%2F2021-sweet-peach-tea-trifle%2F2021-06-02_ATK-1324
+## 71                                                                                                                                            https://s.yimg.com/uu/api/res/1.2/lHfu6OShZYfXzpTFBKWmSA--~B/aD01NjA7dz04NDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/la_times_articles_853/ca8ea4fcf559bc270dfbf958380721cb
+## 72                                                                                                                                       https://s.yimg.com/uu/api/res/1.2/3TlEn7g.gPyQuiWM32XuQw--~B/aD01NzY7dz0xMDI0O2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/thegrio_yahoo_articles_946/b11a251a36bdcec788e803b5e921743a
+## 73                                                                                                                                            https://s.yimg.com/uu/api/res/1.2/fVdxrO8Y5M1DEH1_4n6OMQ--~B/aD01NjA7dz04NDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/la_times_articles_853/f271aa9dc521a5d13283e52756e18ec0
+## 74                                                                                                                                       https://s.yimg.com/uu/api/res/1.2/2mvyUhpNOG83mHd0YX15VQ--~B/aD03NjA7dz0xMTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/miami_herald_mcclatchy_975/38428c5e2458604f5a19cb3eed95be5c
+## 75                                                                                                                                                      https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1500,ar_3:2/k%2FPhoto%2FRecipes%2F2021-06-juneteenth-wings%2FKitchn_Juneteenth_Recipes_3
+## 76                                                                                                                                                                                                                                                                                   https://images.mktw.net/im-355803/horizontal
+## 77                                                                                                                                                                                                                                              https://cdn-blog.adafruit.com/uploads/2021/06/adafruit_juneteenth_2021_blog-2.jpg
+## 78                                                                                                                                                                                                                             https://www.gamespot.com/a/uploads/screen_kubrick/1647/16470614/3844372-knockoutcityjuneteenth.jpg
+## 79                                                                                                                                         https://s.yimg.com/uu/api/res/1.2/r2oeBIwgxM_8cDiZjEwM.A--~B/aD0xNTAwO3c9MjAwMDthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/insider_articles_922/36c96bbb4c751a6b7ba26488f32267b2
+## 80                                                                                                                                                                                                                                                           https://cdn-blog.adafruit.com/uploads/2021/06/Juneteenth_Feature.png
+## 81                                                                                                                                                                            https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/069d98393ff04a3901cbd64df4a14cc2.jpg
+## 82                                                                                                                                                                                                                                    https://static.politico.com/b7/a7/284f07ad4ee59d351e99444c5cdf/gettyimages-1232326298-1.jpg
+## 83                                                                                                                                                                                        https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/abwm6w3prjmdcyvoqfxn.jpg
+## 84                                                                                                                                                                                                                                 https://fashionista.com/.image/t_share/MTgxNzc1OTg5NDUyMzE3ODI3/dolce-gabbana-china-issues.jpg
+## 85                                                                                                                                                                                                                                                      https://www.rollingstone.com/wp-content/uploads/2021/06/nile-rodgersc.jpg
+## 86                                                                                                                                                                                                                                       https://imagez.tmz.com/image/cd/16by9/2021/06/17/cd8d393219854d09bed817b31eea9d34_xl.jpg
+## 87                                                                                                                                   https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2021%2F06%2FThis-Juneteenth-NFT-Fundraiser-and-Gallery-Will-Spotlight-Global-Black-Creatives-TW.jpg?w=960&amp;cbr=1&amp;q=90&amp;fit=max
+## 88                                                                                                                                                                                                                                                                                       https://images.mktw.net/im-354925/social
+## 89                                                                                                                                          https://cms.qz.com/wp-content/uploads/2021/06/2020-06-19T231642Z_740397157_RC2NCH9G52IJ_RTRMADP_3_MINNEAPOLIS-POLICE-JUNETEENTH-NEW-YORK.jpg?quality=75&amp;strip=all&amp;w=1200&amp;h=630&amp;crop=1
+## 90                                                                                                                                                                                                              https://www.imore.com/sites/imore.com/files/styles/large/public/field/image/2021/06/apple-pay-juneteenth-2021.jpg
+## 91                                                                                                                                                                                                                                  https://www.aljazeera.com/wp-content/uploads/2021/06/AP20205838533454-1.jpg?resize=1200%2C630
+## 92                                                                                                                                                                 https://cdn.vox-cdn.com/thumbor/qToa8DorWMihPAc-RoNgR_NvwXY=/0x293:3287x2014/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/22665259/1175990285.jpg
+## 93                                                                                                                                                                                                                                                  https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ie64xe49Y8no/v0/1200x759.jpg
+## 94                                                                                                                                                                                                                                        https://static.politico.com/d2/ab/6eab1e984661afb227e70da6be80/2106017-biden-ap-773.jpg
+## 95                                                                                                                                                                                                                                                            https://www.thehindu.com/static/theme/default/base/img/og-image.jpg
+## 96                                                                                                                                                                                                                                             https://www.adweek.com/wp-content/uploads/2021/06/FBJuneteenthWordmark-600x315.jpg
+## 97                                                                                                                                                                                                                                https://thepointsguy.global.ssl.fastly.net/us/originals/2020/06/Denver_Joe-Amon-Contributor.jpg
+## 98                                                                                                                                                                                                                                                https://www.theparisreview.org/blog/wp-content/uploads/2021/06/ashton-villa.jpg
+## 99                                                                                                                                                                                                                                                  https://deadline.com/wp-content/uploads/2020/08/do-the-right-thing.jpg?w=1024
+## 100                                                                                                                                                                                                     https://media.npr.org/assets/img/2021/06/16/juneteenthplaylist-1_wide-68f53fee5771fb3b268b913f94ddc06c4adb3fd3.jpg?s=1400
+##              publishedAt
+## 1   2021-06-18T05:36:41Z
+## 2   2021-06-17T21:52:36Z
+## 3   2021-06-15T16:51:21Z
+## 4   2021-06-16T22:08:29Z
+## 5   2021-06-16T23:41:48Z
+## 6   2021-06-17T22:51:36Z
+## 7   2021-06-18T08:29:10Z
+## 8   2021-06-17T20:08:10Z
+## 9   2021-06-17T20:15:15Z
+## 10  2021-06-17T19:31:32Z
+## 11  2021-06-16T15:27:51Z
+## 12  2021-06-17T22:28:00Z
+## 13  2021-06-18T00:16:00Z
+## 14  2021-06-17T15:27:00Z
+## 15  2021-06-17T21:58:00Z
+## 16  2021-06-17T20:37:00Z
+## 17  2021-06-16T23:54:00Z
+## 18  2021-06-17T20:38:00Z
+## 19  2021-06-17T21:46:10Z
+## 20  2021-06-12T19:25:19Z
+## 21  2021-06-15T17:05:05Z
+## 22  2021-06-18T06:00:41Z
+## 23  2021-06-15T22:21:21Z
+## 24  2021-06-17T20:13:08Z
+## 25  2021-06-17T14:35:00Z
+## 26  2021-06-17T20:05:02Z
+## 27  2021-06-18T16:12:25Z
+## 28  2021-06-18T16:08:06Z
+## 29  2021-06-18T09:16:00Z
+## 30  2021-06-17T09:59:43Z
+## 31  2021-06-15T20:38:37Z
+## 32  2021-06-17T12:27:13Z
+## 33  2021-06-17T22:54:18Z
+## 34  2021-06-17T17:08:17Z
+## 35  2021-06-16T12:22:33Z
+## 36  2021-06-18T10:00:00Z
+## 37  2021-06-16T23:37:51Z
+## 38  2021-06-17T18:41:19Z
+## 39  2021-06-10T11:59:33Z
+## 40  2021-06-11T18:09:41Z
+## 41  2021-06-18T15:34:30Z
+## 42  2021-06-16T17:39:00Z
+## 43  2021-06-16T01:07:02Z
+## 44  2021-06-12T19:56:40Z
+## 45  2021-06-17T19:29:50Z
+## 46  2021-06-18T09:52:02Z
+## 47  2021-06-18T16:09:38Z
+## 48  2021-06-17T20:44:17Z
+## 49  2021-06-18T08:43:15Z
+## 50  2021-06-17T14:45:19Z
+## 51  2021-06-17T01:24:41Z
+## 52  2021-06-17T09:19:51Z
+## 53  2021-06-18T12:01:16Z
+## 54  2021-06-16T16:14:17Z
+## 55  2021-06-17T20:21:08Z
+## 56  2021-06-18T15:18:26Z
+## 57  2021-06-17T13:00:00Z
+## 58  2021-06-18T16:22:00Z
+## 59  2021-06-15T23:31:00Z
+## 60  2021-06-17T18:10:44Z
+## 61  2021-06-16T14:16:06Z
+## 62  2021-06-11T22:31:57Z
+## 63  2021-06-16T23:37:09Z
+## 64  2021-06-11T16:24:59Z
+## 65  2021-06-16T14:10:24Z
+## 66  2021-06-18T01:14:49Z
+## 67  2021-06-17T19:35:00Z
+## 68  2021-06-18T00:00:20Z
+## 69  2021-06-15T18:42:06Z
+## 70  2021-06-16T16:01:06Z
+## 71  2021-06-14T20:24:33Z
+## 72  2021-06-17T20:05:00Z
+## 73  2021-06-16T23:38:40Z
+## 74  2021-06-18T11:03:11Z
+## 75  2021-06-16T12:46:07Z
+## 76  2021-06-17T19:40:00Z
+## 77  2021-06-15T04:45:00Z
+## 78  2021-06-15T15:18:00Z
+## 79  2021-06-12T06:46:17Z
+## 80  2021-06-16T08:00:22Z
+## 81  2021-06-16T17:00:00Z
+## 82  2021-06-15T22:27:11Z
+## 83  2021-06-17T18:14:00Z
+## 84  2021-06-16T16:00:00Z
+## 85  2021-06-10T14:00:09Z
+## 86  2021-06-17T20:45:48Z
+## 87  2021-06-09T14:36:27Z
+## 88  2021-06-17T14:53:00Z
+## 89  2021-06-17T14:23:02Z
+## 90  2021-06-15T01:30:33Z
+## 91  2021-06-16T23:32:07Z
+## 92  2021-06-17T17:40:00Z
+## 93  2021-06-17T23:50:30Z
+## 94  2021-06-17T20:28:56Z
+## 95  2021-06-17T16:14:25Z
+## 96  2021-06-16T18:35:00Z
+## 97  2021-06-17T17:15:36Z
+## 98  2021-06-18T13:00:11Z
+## 99  2021-06-16T18:07:31Z
+## 100 2021-06-18T09:21:27Z
+##                                                                                                                                                                                                                              content
+## 1          Maybe the wall is to keep Ted Cruz from fleeing to Mexico the next time theres an emergency. JIMMY KIMMEL\r\nOK, so, one state can do its own foreign policy? It reminds me of that famous headline afterâ\200¦ [+552 chars]
+## 2          10. And finally, let the funny business begin.\r\nOur TV critics compiled a list of their 21 favorite American comedies of the 21st century. In so doing, they reflected on just how much comedy has chanâ\200¦ [+697 chars]
+## 3           In the film, contestants in the pageant are a range of sizes and unlike in traditional pageants many compete with their natural, unstraightened hair. When Kai takes the competition stage, she recitesâ\200¦ [+1354 chars]
+## 4           Juneteenth has been celebrated by African Americans since the 19th century, and its broader popularity has waxed and waned throughout American history, according to Brenda Elaine Stevenson, a historiâ\200¦ [+1552 chars]
+## 5         Proponents in both parties said the move was long overdue.\r\nFor far too long, the story of our countrys history has been incomplete, as we have failed to acknowledge, address and come to grips with oâ\200¦ [+1524 chars]
+## 6           Throughout history, Juneteenth has been known by many names: Jubilee Day. Freedom Day. Liberation Day. Emancipation Day. And today, a national holiday, Vice President Kamala Harris said, introducing â\200¦ [+1625 chars]
+## 7           From MTV star to hip-hop guru to international ambassador, Kevin Powell has seen it all. And hell bring that experience to Brower Park in Brooklyn on Saturday, performing an original poetry suite. Thâ\200¦ [+1624 chars]
+## 8           Dr. Jackson, a former White House physician, has represented parts of northern Texas since January. I support Texas Juneteenth holiday and I support all Americans who celebrate it, he said in a stateâ\200¦ [+1729 chars]
+## 9         media captionJuneteenth is a celebration of the freedom, culture and empowerment of African-Americans.\r\nThe Juneteenth National Independence Day Act, which establishes a holiday that commemorates theâ\200¦ [+4873 chars]
+## 10          Mr. de Blasio is taking other measures to demonstrate a commitment to honoring Juneteenth. On Thursday, he announced a Friday Juneteenth celebration on the James Baldwin Lawn in Harlems St. Nicholas â\200¦ [+1867 chars]
+## 11        This Saturday is Juneteenth, the annual holidayÂ long recognized by Black communities nationwide everyÂ June 19. It was on that date in 1865 when a Union general arrived in Galveston, Texas and informeâ\200¦ [+1965 chars]
+## 12          A view of the exterior of the JP Morgan Chase &amp;amp; Co. corporate headquarters in New York City May 20, 2015. REUTERS/Mike SegarJune 17 (Reuters) - JPMorgan Chase &amp;amp; Co (JPM.N) will give its U.S. â\200¦ [+1332 chars]
+## 13          U.S. President Joe Biden speaks prior to signing of the Juneteenth National Independence Day Act into law in the East Room of the White House in Washington, U.S., June 17, 2021. REUTERS/Carlos Barriaâ\200¦ [+3763 chars]
+## 14          WASHINGTON, June 17 (Reuters) - U.S. President Joe Biden will sign a bill into law on Thursday afternoon to make June 19 a federal holiday commemorating the end of the legal enslavement of Black Amerâ\200¦ [+1399 chars]
+## 15         By Reuters Staff\r\nJune 17 (Reuters) - The U.S. Centers for Disease Control and Prevention (CDC) on Thursday put off its meeting to discuss the occurrence of myocarditis among people who received COVIâ\200¦ [+391 chars]
+## 16           The seal of the U.S. Securities and Exchange Commission (SEC) is seen at their headquarters in Washington, D.C., U.S., May 12, 2021. REUTERS/Andrew KellyWASHINGTON, June 17 (Reuters) - The U.S. Securâ\200¦ [+598 chars]
+## 17          Norma Ewing of Seattle holds a sign as people gather at Judkins Park for Juneteenth, which commemorates the end of slavery in Texas, two years after the 1863 Emancipation Proclamation freed slaves elâ\200¦ [+2215 chars]
+## 18       By Reuters Staff\r\nFILE PHOTO: The seal of the U.S. Securities and Exchange Commission (SEC) is seen at their headquarters in Washington, D.C., U.S., May 12, 2021. REUTERS/Andrew Kelly\r\nWASHINGTON (Reâ\200¦ [+511 chars]
+## 19        The passage of the Juneteenth holiday. Illustrated | AP Images, iStock \r\nJuneteenth, a day commemorating the end of slavery in the United States, became the 11th federal holiday with overwhelming andâ\200¦ [+2599 chars]
+## 20           Outrage erupted when social media spotted advertisements for the Historic Latta Plantation&#39;s racist Juneteenth celebration. Removing the advertisements did not erase the terrible, racist language theâ\200¦ [+985 chars]
+## 21         Bed-Stuyâ\200\231s BLK MKT Vintagefounded by Jannah Handy and Kiyanna Stewartspecializes in second-hand delights from magazines to buttons, but this Juneteenth T-shirt is one of their own, new products. Commâ\200¦ [+286 chars]
+## 22        If you have the day off of work on June 18 or 19, you can thank a small collective of Black artists and creative professionals in the Bay Area who call themselves Hella Creative.\r\nOver the past year,â\200¦ [+7289 chars]
+## 23      Juneteenth marks when enslaved people in Texas learned that they had been freed under the Emancipation Proclamation.\r\nAbraham Lincoln Presidential Library and Museum via AP\r\nThe Senate unanimously apâ\200¦ [+1693 chars]
+## 24        President Joe Biden on Thursday signed a bill into law that makes June 19, known as Juneteenth, a national holiday celebrating the end of slavery in the United States.\r\nVice President Kamala Harris oâ\200¦ [+2965 chars]
+## 25        Sandra Quince has been readying for this moment her whole career. But still, it carried extra weight when nonprofit diversity-and-inclusion coalition Paradigm forÂ Parity named her its first-ever CEOÂ â\200¦ [+6999 chars]
+## 26    Protesters last year chanted as they marched after a Juneteenth rally at the Brooklyn Museum, in the Brooklyn borough of New York.\r\nJohn Minchillo/AP\r\nOpal Lee is 94 and she&#39;s doing a holy dance. \r\nIâ\200¦ [+9833 chars]
+## 27          Trump boasted that he &quot;made Juneteenth very famous&quot; by the backlash his campaign sparked by inadvertently scheduling a rally on the day in Tulsa, according to a forthcoming book by Wall Street Journaâ\200¦ [+2941 chars]
+## 28        Juneteenth is Saturday, and Myrtle Beach area and state events are happening over the weekend to celebrate the emancipation of enslaved Black people in Galveston, Texas.\r\nAlso referred to as Juneteenâ\200¦ [+2346 chars]
+## 29      By Reuters Staff\r\n(Repeats with no changes to text)\r\nJune 17 (Reuters) - JPMorgan Chase &amp;amp; Co will give its U.S. employees one floating day off for the newly implemented Juneteenth federal holidayâ\200¦ [+1436 chars]
+## 30      WASHINGTON -- \r\nThe United States will soon have a new federal holiday commemorating the end of slavery.\r\nThe House voted 415-14 on Wednesday to make Juneteenth, or June 19th, the 12th federal holidaâ\200¦ [+4407 chars]
+## 31          Sen. Ron Johnson (R-Wisc.) on Tuesday announced he will no longer obstruct efforts to make Juneteenth a federal holiday and with that, the United States&#39; second, fuller Independence Day may finally râ\200¦ [+1972 chars]
+## 32        The United States will soon have a new federal holiday commemorating the end of slavery.\r\nThe House voted 415-14 on Wednesday to make Juneteenth, or June 19th, the 12th federal holiday, and Presidentâ\200¦ [+4613 chars]
+## 33       Juneteenth is finally getting some mainstream recognition as a holiday. \r\nCelebrated on June 19, Juneteenth has sometimes been referred to as Americas second Independence Day. It was on that day in 1â\200¦ [+13872 chars]
+## 34        The U.S. government is catching up with Black people who have been commemorating the end of slavery in the United States for generations with a day called Juneteenth.\r\nPresident Joe Biden is expectedâ\200¦ [+3774 chars]
+## 35        WASHINGTON -- The Senate passed a bill Tuesday that would make Juneteenth, or June 19th, a federal holiday commemorating the end of slavery in the United States.\r\nThe bill would lead to Juneteenth beâ\200¦ [+2325 chars]
+## 36          When you are Black in America, how do you celebrate progress? How do you honor the history and memory of emancipation, liberation, and advancement? How do Black people mark a moment when a positive câ\200¦ [+5547 chars]
+## 37          For the first time in nearly 40 years, Congress has moved to establish a new national holiday, this time for Juneteenth, and just in time for Saturday&#39;s 156th anniversary of the day which marks the lâ\200¦ [+5963 chars]
+## 38          Late summer at West Point is stiflingly hot. But, as a brand-new cadet standing nervously in military formation, I barely noticed. I was consumed with the environment surrounding me tall stone buildiâ\200¦ [+4694 chars]
+## 39        The Town of Cary held its inaugural Juneteenth celebration in 2019, but this year marks the first time town employees will have a paid holiday in honor of the day.\r\nThe Town Council voted unanimouslyâ\200¦ [+3718 chars]
+## 40        A racist event description, promising to tell the story of white refugees and defeated Confederate soldiers, was abruptly removed Friday by the Historic Latta Plantation after backlash.\r\nOn its websiâ\200¦ [+2246 chars]
+## 41          Juneteenth is now officially a federal holiday, but the 14 House Republicans who voted against the Juneteenth National Independence Day Act&#39;s passage have some varying objections to the day of recognâ\200¦ [+1806 chars]
+## 42          Juneteenth, a portmanteau of June 19, is a holiday that honors the end of slavery in the United States.On June 19, 1865, federal troops marched on Galveston, Texas, to take control of the state. Evenâ\200¦ [+2404 chars]
+## 43          Mecklenburg County is not renewing its contract with the nonprofit that manages Historic Latta Plantation, after a controversial Juneteenth program planned for the Huntersville site sparked a social â\200¦ [+5741 chars]
+## 44          Historic Latta Plantation refused to apologize Saturday for a controversial program whose racist Juneteenth event description promised to tell the story of white refugees and defeated Confederate solâ\200¦ [+4834 chars]
+## 45          What, to the American slave, is your 4th of July? This is the question that formerly enslaved abolitionist Frederick Douglass posed in a July 1852 speech that would later become one of his most famouâ\200¦ [+6072 chars]
+## 46          Opal Lee, the 94-year-old known as the Grandmother of Juneteenth due to her tireless campaigning to make the commemoration of the end of slavery in the U.S. a national federal holiday, had an off theâ\200¦ [+1736 chars]
+## 47          Tomorrow is Juneteenth, commemorating the freeing of enslaved Black people in Texas on June 19, 1865. That was the day that Maj. Gen. Gordon Granger delivered a message to the people of Galveston, Teâ\200¦ [+1982 chars]
+## 48           During the White House COVID-19 response team briefing on Thursday, Dr. Rochelle Walensky, director of the Centers for Disease Control and Prevention, said the seven-day daily average death rate due â\200¦ [+261 chars]
+## 49          Today, President Biden &quot;signed the Juneteenth National Independence Day Act, making Juneteenth a federal holiday,&quot; Jimmy Fallon said on Thursday&#39;s Tonight Show. &quot;The bill hit Biden&#39;s desk after it waâ\200¦ [+2449 chars]
+## 50          Congress moved one step closer to making Juneteenth a federal holiday this week, as the House overwhelmingly passed the Juneteenth National Independence Day Act last night following a unanimous vote â\200¦ [+3657 chars]
+## 51        The United States will soon have a new federal holiday commemorating the end of slavery in the nation.\r\nCongress has approved a bill that would make Juneteenth, or 19 June, a holiday a bill Joe Bidenâ\200¦ [+4140 chars]
+## 52        Biden to sign bill to make Juneteenth a federal holiday\r\nPresident Joe Biden on Thursday afternoon will sign into law the bill that makes Juneteenth a federal holiday, according to his official schedâ\200¦ [+4786 chars]
+## 53   Skip to main content\r\nThis content is only available to USA TODAY subscribers.\r\nSubscribe for as low as $4.99 per month.\r\nYour subscription includes access to:\r\nExclusive, subscriber-only content andâ\200¦ [+796 chars]
+## 54     Juneteenth celebrates the Emancipation Proclamation, but the Emancipation Proclamation didn&#39;t apply to all states in the USA. The 13th Amendment brought an end to slavery.\r\nWochit\r\nWASHINGTONÂ  The Hoâ\200¦ [+1730 chars]
+## 55        President Joe Biden signed a bill Thursday afternoon making Juneteenth a federal holiday commemorating the end of slavery in the United States -- just in time for Saturday&#39;s June 19 anniversary.\r\nIt&#39;â\200¦ [+5881 chars]
+## 56          Black Americans rejoiced Thursday after President Joe Biden made Juneteenth a federal holiday, but some said that, while they appreciated the recognition, more is needed to change policies that disadâ\200¦ [+5027 chars]
+## 57         This year marks the 156th commemoration of Juneteenth. The holiday has largely been celebrated in Texas and certain pockets throughout the American South, but in recent years, people across America aâ\200¦ [+12603 chars]
+## 58          Theres nothing on Earth that gets stolen from more than Black culture. From our bodies being taken from Africa to every part of our identities being appropriated and fawned over, as infuriating as itâ\200¦ [+2502 chars]
+## 59        I, like many others, didnt even know anything about Juneteenth until I was an adult, Chicago Mayor Lori Lightfoot said Monday to kick off Juneteenth celebrations in the city.\r\nAfter initially saying â\200¦ [+3187 chars]
+## 60          Thank you kindly for the recognition, making Juneteenth a federal holiday, the literal least you could do coming some 150-plus years after wed already slathered the day in heaps of song, food, knowleâ\200¦ [+8773 chars]
+## 61        This year, Iâ\200\231m celebrating Juneteenth with a full glass of red drink. The color red represents resilience in the Black community, and its symbolism can be traced back before slavery to Africa. In theâ\200¦ [+3297 chars]
+## 62        WINSTON-SALEM, N.C. (AP) Officials in North Carolina have denounced plans now canceled by a historic museum to put on a reenactment of a white slave owner being pursued by Union soldiers.\r\nThe reenacâ\200¦ [+2457 chars]
+## 63          Congress on Wednesday passed a bill recognizing Juneteenth as a federal holiday, even as a cultural war rages over conservative states efforts to ban school lessons around how the countrys history ofâ\200¦ [+5909 chars]
+## 64          Last year, Bandcamp held a fundraiser on Juneteenth (June 19), a holiday commemorating the end of slavery in the United States. Now, the site has announced its second annual Juneteenth fundraiser. Onâ\200¦ [+1935 chars]
+## 65          If you ask Black people born and raised on the island, Juneteenth marks the day Black soldiers in blue uniforms came with their guns to Galveston. That is the story they have told for generations, abâ\200¦ [+4305 chars]
+## 66           The US will officially recognize Juneteenth as a federal holiday on 19 June after Joe Biden signed a bill into law which commemorates the end of slavery in the country. The president described a day â\200¦ [+260 chars]
+## 67          The Confederate battle flag, which was crafted as a symbol of opposition to the abolishment of slavery, is just recently tired. We dont see it much anymore. However, on the 6th, when the stormers raiâ\200¦ [+2411 chars]
+## 68        On Thursday, President Joe Biden signed legislation making Juneteenth a federal holiday.\r\nJuneteenth is on the 19th, but because that is a Saturday, all federal and Missouri state offices will be cloâ\200¦ [+1327 chars]
+## 69          For more than two centuries, Americans have celebrated the countrys independence from Britain at neighborhood cookouts and fireworks displays. For Black Americans, however, the July 4 holiday has beeâ\200¦ [+7566 chars]
+## 70        In preparation for a Juneteenth weekend full of celebrations, shared stories, gratitude, and good food, Iâ\200\231m sharing a decadent trifle that combines three of my Southern favorites: peaches, iced tea, â\200¦ [+9495 chars]
+## 71         Kim Prince is scheduled to be one of the panelists at &quot;Red Drinks for Juneteenth,&quot; a free virtual forum from Los Angeles Times Food Bowl. (Christina House / Los Angeles Times)\r\nCelebrate Juneteenth wâ\200¦ [+650 chars]
+## 72        Exclusive: How will Washington quell the disdain in the Black community over Juneteenth becoming a federal holiday when voting rights and police reform bills remain in jeopardy?\r\nPresident Joe Biden â\200¦ [+4061 chars]
+## 73     (Temi Coker / For The Times)\r\nThere are two ways people learn about Juneteenth: They seek it out or it finds them.\r\nFor some, Juneteenth is a recent revelation. Last years anti-police brutality proteâ\200¦ [+10566 chars]
+## 74       Are you tired of dealing with a perpetual loop of Zoom meetings and Wi-Fi connectivity issues?\r\nWell, you can step outside this weekend and enjoy South Floridas sunny 90 degree weather while donning â\200¦ [+10264 chars]
+## 75     I prioritize celebrating Juneteenth every year, and I think others should too.Â \r\nJuneteenth is a holiday marking our countryâ\200\231s second Independence Day. It commemorates the day in 1865 when General Goâ\200¦ [+7923 chars]
+## 76           As Washington policymakers establish June 19, or Juneteenth, as a new federal holiday, the U.S. Office of Personnel Management, the agency in charge of such matters, said most employees will get Fridâ\200¦ [+160 chars]
+## 77      June 15, 2021 AT 12:45 am\r\nAdafruit Celebrates Juneteenth 2021 #Juneteenth #Emancipation\r\nJune 19 is Juneteenth; a celebration of the emancipation of the last slaves in the US. This holiday deserves â\200¦ [+3078 chars]
+## 78        EA&#39;s multiplayer dodgeball-battler Knockout City is getting a batch of Juneteenth related player icons later this week in its in-game shop. The icons will be free for all players.\r\nJuneteenth is celeâ\200¦ [+1656 chars]
+## 79        Latta Plantation, Huntersville, North Carolina. Carol M. Highsmith/Buyenlarge/Getty Images\r\nA North Carolina Plantation canceled an event that would have told the stories of displaced &quot;white refugeesâ\200¦ [+1441 chars]
+## 80      Stop breadboarding and soldering â\200“ start making immediately! Adafruitâ\200\231s Circuit Playground is jam-packed with LEDs, sensors, buttons, alligator clip pads and more. Build projects with Circuit Playgroâ\200¦ [+2216 chars]
+## 81           WASHINGTONIn a rare unanimous vote, the Senate passed a bill Wednesday to make Juneteenth a federal holiday so long as no one thinks too hard about its significance. This is a day to barbecue and getâ\200¦ [+990 chars]
+## 82         This is huge, Rep. Brenda Lawrence (D-Mich.) tweeted after the vote. I look forward to passing this bill in the House and making #Juneteenth a federal holiday.\r\nRep. Brenda Lawrence, D-Mich., speaks â\200¦ [+613 chars]
+## 83                                                                                                                                                                   Alls well that ends well, I say.\r\nVirgil McCain, Taffy Puller
+## 84  Looks from the Spring 2020 Dolce &amp;amp; Gabbana collection.Â \r\nPhoto: Imaxtree\r\nThese are the stories making headlines in fashion on Wednesday.\r\nDolce &amp;amp; Gabbana is still not welcome in ChinaÂ Hong Kâ\200¦ [+2191 chars]
+## 85      The Robert Randolph Foundation will host Unityfest, a livestream concert event in celebration of Juneteenth, on June 19th at 5:00 p.m. ET via the festivalâ\200\231s website.\r\nHosted by Amanda Seales and JB Sâ\200¦ [+2218 chars]
+## 86        President Bidenjust made it official ... there&#39;s now a federal holiday marking a milestone in the abolishment of slavery in the United States.\r\nBiden put pen to paper Thursday, signing a landmark bilâ\200¦ [+2023 chars]
+## 87          17-year-old prodigious artist and activist Diana Sinclair is commemorating Juneteenth the annual holiday celebrating the end of slavery in the United States with the curation of an art exhibition, puâ\200¦ [+2069 chars]
+## 88         The Value Gap is a MarketWatch Q&amp;amp;A series with business leaders, academics, policymakers and activists on how to reduce racial and social inequalities.Opal Lee, a 94-year-old activist and retiredâ\200¦ [+11132 chars]
+## 89          US Congress this week overwhelmingly backed a proposal to make Juneteenth a national holiday, and president Joe Biden is expected to sign it into law today (June 17). In a rare show of bipartisan supâ\200¦ [+2248 chars]
+## 90        Apple is encouraging Apple Pay users to shop Black-owned businesses on Juneteenth.\r\nJuneteenth, which celebrates the emancipation of those who had been enslaved in the United States, occurs on June 1â\200¦ [+1718 chars]
+## 91        The United States Congress passed a bill on Wednesday to make Juneteenth, or June 19, a federal holiday commemorating the end of slavery in the country.\r\nBy an overwhelming vote, the US House followeâ\200¦ [+3381 chars]
+## 92    Ibram X. Kendi stands for a portrait in 2019 following a panel discussion in Washington, DC, on his book How to Be an Antiracist. | Michael A. McCoy/Washington Post via Getty Images\r\n\n \n\n The author â\200¦ [+13062 chars]
+## 93        Greetings, QuickTake readers! This week, Biden creates the first new national holiday since Martin Luther King Jr. Day. Plus: China gets one step closer to building its own space station. \r\nStream noâ\200¦ [+3098 chars]
+## 94          Juneteenth commemorates the end of slavery in the United States. It&#39;s name is a portmanteau of the date it is celebrated on celebrated annually on June 19 and has been recognized by 45 states, to varâ\200¦ [+2615 chars]
+## 95        The United States will soon have a new federal holiday commemorating the end of slavery.\r\nThe House voted 415-14 on Wednesday to make Juneteenth, or June 19th, the 12th federal holiday, and Presidentâ\200¦ [+4376 chars]
+## 96            Businesswoman and fashion designer Tina Knowles-Lawson is helping Facebook celebrate Juneteenth (Saturday, June 19) with a video detailing her familys deep connection with the holiday, their Texas roâ\200¦ [+97 chars]
+## 97        President Joe Biden is expected to sign a bill into law Thursday to make Juneteenth, the commemoration of the end of U.S. slavery, a federal holiday.\r\nThe legislation, officially named The Juneteenthâ\200¦ [+1502 chars]
+## 98      Jas. I. Campbell, Historic American Buildings Survey: Ashton Villa, Photograph, 1934. Public domain, via Wikimedia Commons.\r\nThe long-held myth goes that on June 19, 1865, Union genÂ­eral Gordon Grangâ\200¦ [+11768 chars]
+## 99        AMC Entertainment will present a weeklong AMC Black Picture Showcase at select theaters nationwide starting Friday to celebrate Juneteenth.\r\nThe newly established national holiday commemorates the abâ\200¦ [+1368 chars]
+## 100         YWCA camp for girls. Highland Beach, Maryland, 1930. These photos are from the Scurlock Studio Collection at the Smithsonian National Museum of American History. Read more about the photos at the endâ\200¦ [+8364 chars]
+</code></pre>
+<h2 id="building-a-word-cloud">Building a word cloud</h2>
+<p>Use data from titles and visualize in a word cloud</p>
+<ul>
+<li><p>Must ‘tokenize’ the titles and remove ‘stop words’ like “the” or “a”</p></li>
+<li><p><code>dplyr</code> and <code>tidytext</code> packages makes this very easy!</p></li>
+</ul>
+<blockquote>
+<ul>
+<li><code>unnest_tokens()</code> tokenizes the titles and creates a data frame</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>A <code>stop_words</code> object is available with common words to remove (sometimes you need to add to this)</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><code>anti_join()</code> the data frame from <code>unnest_tokens()</code> and the <code>stop_words</code> data frame</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>Sum up the number of times each word appears for weighting in the word cloud (<code>count()</code> works well!)</li>
+</ul>
+</blockquote>
+<h2 id="making-data-for-word-cloud">Making data for word cloud</h2>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">library</span>(dplyr); <span class="kw">library</span>(tidytext)</a>
+<a class="sourceLine" id="cb8-2" title="2">wcData &lt;-<span class="st"> </span>parsed<span class="op">$</span>articles<span class="op">$</span>title <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb8-3" title="3"><span class="st">  </span><span class="kw">as_tibble</span>() <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb8-4" title="4"><span class="st">  </span><span class="kw">unnest_tokens</span>(word, value) <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb8-5" title="5"><span class="st">  </span><span class="kw">anti_join</span>(stop_words) <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb8-6" title="6"><span class="st">  </span><span class="kw">count</span>(word, <span class="dt">sort =</span> <span class="ot">TRUE</span>)</a>
+<a class="sourceLine" id="cb8-7" title="7">wcData</a></code></pre></div>
+<pre><code>## # A tibble: 326 x 2
+##    word           n
+##    &lt;chr&gt;      &lt;int&gt;
+##  1 juneteenth    99
+##  2 holiday       47
+##  3 federal       28
+##  4 bill          14
+##  5 biden         12
+##  6 u.s           10
+##  7 â              9
+##  8 black          8
+##  9 day            8
+## 10 slavery        8
+## # ... with 316 more rows
+</code></pre>
+<h2 id="word-cloud-via-wordcloud2-package">Word cloud via <code>wordcloud2</code> package</h2>
+<p><code>wordcloud2</code> package easily creates nice looking word clouds</p>
+<center>
+
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" title="1"><span class="kw">library</span>(wordcloud2); <span class="kw">wordcloud2</span>(wcData[<span class="op">-</span><span class="dv">1</span>,])</a></code></pre></div>
+<!--html_preserve-->
+
+<div id="htmlwidget-5e791f085e78367b4bc3" class="wordcloud2 html-widget" style="width:672px;height:480px;">
+
+</div>
+
+<script type="application/json" data-for="htmlwidget-5e791f085e78367b4bc3">{"x":{"word":["holiday","federal","bill","biden","u.s","â","black","day","slavery","event","reuters","signs","congress","marking","national","americans","city","freedom","passes","plantation","senate","14","approves","celebrate","celebrating","celebration","create","emancipation","employees","free","friday","honor","house","law","paid","voted","votes","white","19","2021","94","announces","canceled","celebrates","close","colbert","companies","creatives","donâ","due","events","finally","food","fundraiser","global","hereâ","jpmorgan","juneteenthâ","kansas","makes","mayor","meet","meiko","nc","news","observe","offices","promo","racist","republicans","sec","sign","significance","signing","stephen","temple's","thursday","time","ubs","1","158","4","44","5","7","800","abolition","adafruit","adding","advertisement","african","alongside","amc","americaâ","american","angelenos","angeles","annual","anti","apology","apple","attends","backlash","bandcamp","bbq","belongs","bloggers","book","bowl","box","briefing","businesses","calls","campaigned","cancels","capitol","carolina","cary","cdc","celebrated","celebrations","ceo","chainâ","cheer","chic","chicago","chicken","china","claimed","closed","coleman's","comedies","commemorating","conceals","confusionâ","congressmen","continue","contract","controversial","cookout","corporate","covid","creating","critics","crowned","ctv","darius","decades","defeating","delays","depicting","designated","details","dolce","downes","drinks","effect","empty","encourages","enemy","entertainment","equity","erase","establishing","evening","excuses","explainer","facebook","factbox","fallon","famous","fargo","fashion","feels","fight","films","flag","forget","freeâ","fugitive","gabbana","gallery","galveston","gap","gesture","giving","groundwork","hard","heart","helped","hijacked","historic","history","holidayâ","hypocrisy","iâ","ibram","infrastructure","inspired","isnâ","itâ","items","jeer","jimmy","july","june","kendi","knockout","lara","late","latta","laying","led","lee","leeâ","legacy","legislation","limeade","list","los","marker","meck","miami","miss","multiply","n.y.c","nationâ","nft","nile","nonprofit","north","nypl","obamacare","offâ","official","opal","opinion","opposition","overdue","owned","owner","pay","people","perform","perspective","pianist","plans","playlist","poised","poll","president","profound","progress","public","push","racism","read","recipes","reckoning","recognition","red","refugeeâ","refugees","remain","removes","report","republicansâ","response","reuters.com","risk","robert","rodgers","rpt","rucker","sc","sets","shirt","shop","shots","showcase","showstopper","slams","slave","slaveowner","slavery's","songs","southern","spotlight","stories","story","style","talk","tees","thankful","times","told","town","tradition","treat","trifle","trump","unanimously","unimpressed","unityfest","update","users","usher","video","vine","virtual","vote","wasnâ","watchlist","watermelon","weâ","wednesday","week","weekend","weekly","weight","wings","woman","workers","worst","york"],"freq":[47,28,14,12,10,9,8,8,8,7,7,7,6,5,5,4,4,4,4,4,4,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"fontFamily":"Segoe UI","fontWeight":"bold","color":"random-dark","minSize":0,"weightFactor":3.82978723404255,"backgroundColor":"white","gridSize":0,"minRotation":-0.785398163397448,"maxRotation":0.785398163397448,"shuffle":true,"rotateRatio":0.4,"shape":"circle","ellipticity":0.65,"figBase64":null,"hover":null},"evals":[],"jsHooks":{"render":[{"code":"function(el,x){\n                        console.log(123);\n                        if(!iii){\n                          window.location.reload();\n                          iii = False;\n\n                        }\n  }","data":null}]}}</script>
+
+<!--/html_preserve-->
+
+</center>
+
+<h2 id="goals-1">Goals</h2>
+<ul>
+<li><p>Understand very basics of APIs</p></li>
+<li><p>Contact an API using R</p>
+<ul>
+<li><code>httr:GET(&quot;URL&quot;)</code></li>
+</ul></li>
+<li><p>Process returned data</p>
+<ul>
+<li>Often JSON data: <code>jsonlite</code> package</li>
+<li>Tokenize and remove stop words with <code>tidytext</code></li>
+</ul></li>
+<li><p>Create a word cloud</p>
+<ul>
+<li><code>wordcloud2</code> package</li>
+</ul></li>
+</ul>
+
+</body>
+</html>
