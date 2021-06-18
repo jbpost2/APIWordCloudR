@@ -1,0 +1,6 @@
+base
+httr
+dplyr
+jsonlite
+tidytext
+wordcloud2
